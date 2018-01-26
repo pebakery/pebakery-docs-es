@@ -29,7 +29,7 @@ Si el argumento `Encoding` no está especificado, *SevenZipExtractor* se usará 
 
 ## Observaciones
 
-Este comando depende de [SharpCompress](https://github.com/adamhathcock/sharpcompress) (Managed) o [SevenZipExtractor](https://github.com/adoconnection/SevenZipExtractor) and `7z.dll` (Native).
+Este comando depende de [SharpCompress](https://github.com/adamhathcock/sharpcompress) (Managed) o [SevenZipExtractor](https://github.com/adoconnection/SevenZipExtractor) y `7z.dll` (Native).
 
 ## Relacionado
 
