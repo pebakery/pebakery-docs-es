@@ -17,8 +17,8 @@ Compress,<Format>,<SrcPath>,<DestArchive>,[CompressLevel],[Encoding]
 | Format | Formato de archivo. Solo `Zip` es compatible en este momento. |
 | SrcPath | Ruta completa del archivo/directorio para comprimir. |
 | DestArchive | Ruta completa donde se creará el archivo. |
-| CompressLevel | **(Opcional)** Esto afecta el tamaño de archivo y el tiempo de compresión. Compresión soportada: `Store`, `Fastest`, `Normal`, `Best`. **por defecto** is `Normal`. |
-| Encoding | **(Opcional)** Codificación para ser utilizado en nombre de archivo. Opciones compatibles: `UTF8`, `UTF16`, `UTF16BE`, `ANSI`. **Default** is `UTF8`. |
+| CompressLevel | **(Opcional)** Esto afecta el tamaño de archivo y el tiempo de compresión. Compresión soportada: `Store`, `Fastest`, `Normal`, `Best`. **por defecto** es `Normal`. |
+| Encoding | **(Opcional)** Codificación para ser utilizado en nombre de archivo. Opciones compatibles: `UTF8`, `UTF16`, `UTF16BE`, `ANSI`. **por defecto** es `UTF8`. |
 
 `CompressLevel` y `Encoding` se puede usar de forma independiente.
 
