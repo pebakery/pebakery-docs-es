@@ -1,0 +1,15 @@
+# Guía de codificación
+
+## Comprobación de sintaxis
+
+PEBakery suporta comprobación de sintaxis.
+
+### Comprobando declaraciones o sección
+
+Copiar códigos en `Comprobador de sintaxis` (Syntax Checker) proporcionado en `Utilidad` (Utility).
+
+### Comprobación de Script
+
+Asegúrese de que su script es visible en el árbol del proyecto. Abrir la interface de script, y haga clic en el botón de verificación a la derecha.
+
+Si `Comprobación de errores de sintaxis automática` (Auto Syntax Check Error) está habilitado, el color del botón reporta si existe error.
