@@ -20,7 +20,7 @@ Compress,<Format>,<SrcPath>,<DestArchive>,[CompressLevel],[Encoding]
 | CompressLevel | **(Opcional)** Esto afecta el tamaño de archivo y el tiempo de compresión. Compresión soportada: `Store`, `Fastest`, `Normal`, `Best`. **por defecto** es `Normal`. |
 | Encoding | **(Opcional)** Codificación para ser utilizado en nombre de archivo. Opciones compatibles: `UTF8`, `UTF16`, `UTF16BE`, `ANSI`. **por defecto** es `UTF8`. |
 
-`CompressLevel` y `Encoding` se puede usar de forma independiente.
+`CompressLevel` y `Encoding` se pueden usar de forma independiente.
 
 ## Observaciones
 
