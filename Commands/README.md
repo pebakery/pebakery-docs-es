@@ -18,4 +18,4 @@
 1. [Text](./Text/README.md)
 1. [WIM](./WIM/README.md)
 
-[Deprecated](./Deprecated.md)
+[Obsoleto](./Deprecated.md)
