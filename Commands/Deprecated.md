@@ -1,6 +1,6 @@
 # Comandos obsoletos
 
-## Obsoleto de WinBuilder 082
+## Obsoletos de WinBuilder 082
 
 ### FileByteExtract
 
