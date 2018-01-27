@@ -17,7 +17,7 @@ Set,<%Variable%>,<Value>[,GLOBAL | PERMANENT]
 
 ### Flags
 
-Las siguientes flags son mutuamente excluyentes.
+Las siguientes flags (indicadores) son mutuamente excluyentes.
 
 | Flag | Descripción |
 | --- | --- |
