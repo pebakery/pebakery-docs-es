@@ -15,8 +15,8 @@ Beep,<Type>
 | Type | Seleccionar de los siguientes sonidos: |
 || Ok |
 || Error |
-|| Asterisk |
-|| Confirmation |
+|| Asterisco |
+|| Confirmación |
 
 ## Observaciones
 
