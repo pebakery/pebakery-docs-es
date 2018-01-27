@@ -1,8 +1,8 @@
-# Run
+# Run (Ejecutar)
 
 Ejecuta los comandos que se encuentran en una `[Sección]` nombrada de un archivo script.
 
-Puede ejecutar secciones desde cualquier secuencia de comandos, incluida la secuencia de comandos desde donde originalmente se ejecuta `Ejecutar`, pero solo las variables en el alcance de la secuencia de comandos actual serán visibles para la sección que se está ejecutando.
+Puede ejecutar secciones desde cualquier secuencia de comandos, incluida la secuencia de comandos desde donde originalmente se ejecuta `Run` (`Ejecutar`), pero solo las variables en el alcance de la secuencia de comandos actual serán visibles para la sección que se está ejecutando.
 
 ## Sintaxis
 
