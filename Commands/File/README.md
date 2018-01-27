@@ -1,14 +1,18 @@
-# Comandos de archivos y directorios
+# Comandos de archivo y directorio
 
-1. [FileCopy](./FileCopy.md)
-1. [FileDelete](./FileDelete.md)
-1. [FileRename](./FileRename.md)
-1. [FileCreateBlank](./FileCreateBlank.md)
-1. [FileSize](./FileSize.md)
-1. [FileVersion](./FileVersion.md)
-1. [DirCopy](./DirCopy.md)
-1. [DirDelete](./DirDelete.md)
-1. [DirMove](./DirMove.md)
-1. [DirMake](./DirMake.md)
-1. [DirSize](./DirSize.md)
-1. [PathMove](./PathMove.md)
+Haga clic en un nombre de comando para obtener una descripción detallada.
+
+| Comando | Descripción |
+| --- | --- |
+| [DirCopy](./DirCopy.md) | Copia un directorio junto con todos los subdirectorios y archivos. |
+| [DirDelete](./DirDelete.md) | Elimina un directorio y todos los archivos y subdirectorios que contiene. |
+| [DirMake](./DirMake.md) | Crea un directorio. |
+| [DirMove](./DirMove.md) | Mueve un directorio. |
+| [DirSize](./DirSize.md) | Obtiene el tamaño de un directorio. |
+| [FileCopy](./FileCopy.md) | Copia uno o más archivos. |
+| [FileCreateBlank](./FileCreateBlank.md) | Crea un archivo vacío. |
+| [FileDelete](./FileDelete.md) | Elimina un archivo. |
+| [FileRename](./FileRename.md) | Renombrar o mover un archivo. |
+| [FileSize](./FileSize.md) | Obtiene el tamaño de un archivo. |
+| [FileVersion](./FileVersion.md) | Recupera el número de versión del archivo especificado. |
+| [PathMove](./PathMove.md) | Mueve un archivo o directorio. |
