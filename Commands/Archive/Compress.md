@@ -1,6 +1,6 @@
 # Compress
 
-Comprime un archivo o directorio en el archivo.
+Comprime un archivo o directorio a un archivo comprimido.
 
 **¡Advertencia!** Este comando es inestable y puede cambiarse en una versión futura.
 
