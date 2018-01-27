@@ -16,7 +16,7 @@ IniWriteTextLine,<FileName>,<Section>,<Line>[,APPEND]
 | Section | La sección donde se escribirá la cadena. |
 | Line | La cadena a escribir. |
 
-### Flags
+### Flags (Indicadores)
 
 | Flag | Descripción |
 | --- | --- |
