@@ -33,6 +33,7 @@ Loop,BREAK
 ### Tokens
 
 Los siguientes tokens son pasados por PEBakery y se pueden usar para realizar operaciones adicionales dentro del bucle.
+
 | Token | Descripción |
 | --- | --- |
 | #1, #2, #3, etc. | Usado dentro de una 'Sección' para acceder a cualquier parámetro pasado. El esquema de numeración comienza desde `1` y continúa en el orden en que se pasaron los parámetros. Estos tokens se descartan cuando la sección termina de procesarse. |
