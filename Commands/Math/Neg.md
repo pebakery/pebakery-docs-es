@@ -1,6 +1,6 @@
 # Math,Neg
 
-Devuelve la inversa aritmética de un valor.
+Calcula el inverso aditivo de un valor *(n * -1)*.
 
 ## Sintaxis
 
