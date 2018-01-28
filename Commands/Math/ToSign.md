@@ -1,6 +1,6 @@
 # Math,ToSign
 
-Convierte un entero sin signo de un entero con signo.
+Convierte un entero sin signo a un entero con signo.
 
 ## Sintaxis
 
