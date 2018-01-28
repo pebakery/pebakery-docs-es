@@ -14,7 +14,7 @@ ReadInterface,<Property>,<ScriptFile>,<Interface>,<ControlName>,<%DestVar%>
 | --- | --- |
 | Property | El valor de propiedad para leer:
 || Texto - Valor de texto del control. |
-|| Visible - Verdadero/Falso - Mostrar u Ocultar el control. |
+|| Visible - `Verdadero` / `Falso` - Mostrar u ocultar el control. |
 || PosX - Posición horizontal medida desde la esquina superior izquierda del control. |
 || PosY - Posición vertical medida desde la esquina superior izquierda del control. |
 || Ancho - Ancho del control. |
@@ -27,7 +27,7 @@ ReadInterface,<Property>,<ScriptFile>,<Interface>,<ControlName>,<%DestVar%>
 
 ## Observaciones
 
-La propiedad `Valor`` solo se admite en estos controles:
+La propiedad `Valor` solo se admite en estos controles:
 
 | Control | Valor |
 | --- | --- |
