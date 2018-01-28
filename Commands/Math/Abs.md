@@ -36,5 +36,5 @@ Level=5
 
 [Process]
 Math,Abs,%result%,-32
-Message,"Absolute value of -32 = %result%"
+Message,"Valor absoluto de -32 = %result%"
 ```
