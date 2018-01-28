@@ -21,7 +21,7 @@ Haga clic en un nombre de comando para obtener una descripción detallada.
 | [Math,Hex](./Hex.md) | Convierte un entero a su representación hexadecimal. |
 | [Math,IntDiv](./IntDiv.md) | Divide dos enteros y devuelve el cociente y el resto. |
 | [Math,Mul](./Mul.md) | Multiplica dos números. |
-| [Math,Neg](./Neg.md) | Devuelve la inversa aritmética de un valor. |
+| [Math,Neg](./Neg.md) | Calcula el inverso aditivo de un valor. |
 | [Math,Pow](./Pow.md) | Elevar un número a una potencia. |
 | [Math,Round](./Round.md) | Devuelve un entero redondeado al número entero más cercano. |
 | [Math,Sub](./Sub.md) | Resta dos números. |
