@@ -2,7 +2,7 @@
 
 Devuelve la fecha y la hora actual en el formato especificado.
 
-This command uses Winbuilder's Date/Time formatting rules. For Date/Time formatting using Standard Formatting options use `StrFormat,DateTime`.
+Este comando usa las reglas de formato de Fecha/Hora de Winbuilder. Para el formato de fecha/hora utilizando las opciones de formato estándar, use `StrFormat,DateTime`.
 
 ## Sintaxis
 
