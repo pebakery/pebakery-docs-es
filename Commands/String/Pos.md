@@ -44,5 +44,5 @@ Author=Homes32
 
 [process]
 StrFormat,Pos,%string%,%subStr%,%result%
-Message,"Substring [%subStr%] está en posición: %result%"
+Message,"Subcadena [%subStr%] está en posición: %result%"
 ```
