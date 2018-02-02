@@ -35,4 +35,4 @@ Haga clic en un nombre de comando para obtener una descripción detallada.
 | [StrFormat,ShortPath](./ShortPath.md) | Convierte una ruta en formato compatible con `DOS 8.3`. |
 | [StrFormat,Split](./Split.md) | Divide una cadena en subcadenas basadas en los delimitadores dados. |
 | [StrFormat,SubStr](./SubStr.md) | Extrae una cantidad de caracteres de un punto de inicio específico en una cadena. |
-| [StrFormat,UCase](./UCase.md) | Convierte una cadena en mayúscula. |
+| [StrFormat,UCase](./UCase.md) | CConvierte una cadena a mayúsculas. |
