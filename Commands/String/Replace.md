@@ -14,7 +14,7 @@ StrFormat,Replace,<String>,<SearchString>,<ReplaceString>,<%DestVar%>
 | --- | --- |
 | String | La cadena a leer. |
 | SearchString | La cadena a encontrar dentro de `String`. |
-| ReplaceString | La cadena para reemplazar en `SearchString`. |
+| ReplaceString | La cadena de reemplazo. |
 | DestVar | La variable donde se guardará el resultado. |
 
 ## Observaciones
