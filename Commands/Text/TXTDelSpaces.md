@@ -1,6 +1,6 @@
 # TXTDelSpaces
 
-Elimine todos los espacios desde el comienzo de cada línea dentro de un archivo de texto.
+Eliminar todos los espacios desde el comienzo de cada línea dentro de un archivo de texto.
 
 ## Sintaxis
 
