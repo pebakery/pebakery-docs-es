@@ -39,7 +39,7 @@ Nota: Se ha observado que el modo `--update-of` de wimlib utilizado por el argum
 
 WIM divididos: PEBakery no admite anexar archivos WIM divididos (.swm).
 
-Este comando usa la biblioteca de imágenes de Windows de código abierto (wimlib)](https://wimlib.net/).
+Este comando usa la [biblioteca de imágenes de Windows de código abierto (wimlib)](https://wimlib.net/).
 
 ## Relacionado
 
