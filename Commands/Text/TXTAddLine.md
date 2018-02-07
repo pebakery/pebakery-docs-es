@@ -1,6 +1,6 @@
 # TXTAddLine
 
-Inserta una línea de texto en la ubicación especificada dentro de un archivo.
+Insertar una línea de texto en la ubicación especificada dentro de un archivo.
 
 ## Sintaxis
 
