@@ -1,6 +1,6 @@
 # TXTDelEmptyLines
 
-Elimina todas las líneas vacías de un archivo de texto dado.
+Eliminar todas las líneas vacías de un archivo de texto dado.
 
 ## Sintaxis
 
