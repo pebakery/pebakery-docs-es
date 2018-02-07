@@ -69,18 +69,18 @@ If,%Callback%,Equal,2,Begin
   System,OnBuildExit,Run,%ScriptFile%,CLEANUP
 End
 
-If,%Simulation%,Equal,0,Echo,"Running successful exit simulation."
+If,%Simulation%,Equal,0,Echo,"Ejecución exitosa de simulación de salida."
 If,%Simulation%,Equal,1,Begin
   Echo,"Ejecutando simulación de error."
   // Forzar que ocurra un error
   FileCopy,foo,bar
 End
 If,%Simulation%,Equal,2,Begin
-  Echo,"Ejecutando simulación del botón STOP (DETENER) del usuario. ..#$xEl script ahora se detendrá por 5 segundos. Ahora es tu oportunidad de presionar el botón STOP..."
+  Echo,"Ejecutando simulación del botón STOP (PARO) del usuario. ..#$xEl script ahora se detendrá por 5 segundos. Ahora es tu oportunidad de presionar el botón PARO..."
   Wait,5
 End
-If,%Simulation%,Equal,3,Halt,"Halt Simulation."
-If,%Simulation%,Equal,4,Exit,"Exit Simulation."
+If,%Simulation%,Equal,3,Halt,"Detener la simulación."
+If,%Simulation%,Equal,4,Exit,"Salir de simulación."
 If,%Simulation%,Equal,5,Echo,"PEBakery no devuelve esta razón actualmente."
 
 [CLEANUP]
@@ -91,13 +91,13 @@ If,#1,EQUAL,ERROR,Begin
   Message,"Ocurrió un error. Saliendo...",ERROR,5
 End
 
-// STOP de usuario
+// PARO de usuario
 If,#1,EQUAL,STOP,Begin
   Beep,Asterisk
-  Message,"Presionó el botón DETENER. Saliendo...",WARNING,5
+  Message,"Presionó el botón PARO. Saliendo...",WARNING,5
 End
 
-// Build/Script finalizado
+// Construir/Script finalizado
 If,#1,EQUAL,DONE,Begin
   Beep,OK
   Message,"¡Procesamiento terminado! Saliendo...",INFORMATION,5
