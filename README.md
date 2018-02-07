@@ -1,9 +1,13 @@
-# PEBakery Manual
+# Manual de PEBakery
 
-¡Bienvenido a PEBakery Manual!
+¡Bienvenido al Manual de PEBakery!
 
-## Contenido
+## Tabla de contenidos
 
-1. [Comandos](./Commands//README.md)
-1. [Informe de error](./BugReport/README.md)
-1. [Guía de codificación](./CodingGuide/README.md)
+1. Referencia de scripting
+    * [Comandos](./Commands/README.md)
+    * [Controles GUI](./GUIControls/README.md)
+1. Apéndice
+    * [Reportes de errores](./BugReport/README.md)
+    * [Guía de codificación](./CodingGuide/README.md)
+    * [Licencia](LICENSE.md)
