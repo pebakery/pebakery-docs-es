@@ -1,6 +1,6 @@
 # TXTDelLine
 
-Elimina las líneas de un archivo de texto determinado que comienzan con una cadena específica.
+Eliminar las líneas de un archivo de texto determinado que comienzan con una cadena específica.
 
 ## Sintaxis
 
