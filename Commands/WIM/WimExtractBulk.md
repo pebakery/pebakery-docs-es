@@ -9,7 +9,7 @@ Note that `WimExtractBulk` is intended for extracting only a subset of a WIM ima
 ## Sintaxis
 
 ```pebakery
-WimExtractBulk,<SrcWim>,<ImageIndex>,<DestDir>,<ListFile>,[CHECK],[NOACL],[NOATTRIB]
+WimExtractBulk,<SrcWim>,<ImageIndex>,<DestDir>,<ListFile>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
 ```
 
 ### Argumentos
@@ -20,6 +20,7 @@ WimExtractBulk,<SrcWim>,<ImageIndex>,<DestDir>,<ListFile>,[CHECK],[NOACL],[NOATT
 | ImageIndex | El índice de la imagen dentro del archivo .wim que contiene los archivos que se extraerán. |
 | DestDir | La ruta completa al directorio donde se extraerán los archivos. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
 | ListFile | La ruta completa es un archivo de texto que contiene una lista de rutas para extraer. Consulte la _Especificación de archivo de lista_ más abajo para más detalles. |
+| Split= | Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
 
 ### Flags (Indicadores)
 
@@ -72,7 +73,7 @@ Integridad de los datos: para detectar daños accidentales (no maliciosos) en lo
 
 Archivos ESD: PEBakery puede extraer archivos de WIM comprimidos sólidos o archivos "ESD" (.esd), al igual que los archivos WIM (.wim) normales. Sin embargo, a veces Microsoft distribuye archivos ESD con segmentos cifrados; PEBakery no puede extraer dichos archivos hasta que no se hayan descifrado.
 
-WIMs divididos: PEBakery no admite la extracción de archivos divididos WIM (.swm) en este momento.
+WIMs divididos: PEBakery admite la extracción de archivos divididos WIM (.swm) usando el argumento `Split=`.
 
 Este comando usa la [biblioteca de imágenes de Windows de código abierto (wimlib)](https://wimlib.net/).
 
