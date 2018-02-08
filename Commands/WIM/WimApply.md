@@ -7,7 +7,7 @@ Extrae ("aplica") una imagen de un archivo de imágenes de Windows (.wim).
 ## Sintaxis
 
 ```pebakery
-WimApply,<SrcWim>,<ImageIndex>,<DestDir>[,CHECK][,NOACL][,NOATTRIB]
+WimApply,<SrcWim>,<ImageIndex>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
 ```
 
 ### Argumentos
@@ -17,6 +17,7 @@ WimApply,<SrcWim>,<ImageIndex>,<DestDir>[,CHECK][,NOACL][,NOATTRIB]
 | SrcWim | La ruta completa del archivo .wim que se extraerá. |
 | ImageIndex | El índice de la imagen en el archivo .wim que se extraerá. |
 | DestDir | La ruta completa al directorio donde se extraerá el archivo .wim. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
+| Split= | Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
 
 ### Flags (Indicadores)
 
@@ -34,7 +35,7 @@ Integridad de los datos: para detectar daños accidentales (no maliciosos) en lo
 
 Archivos ESD: PEBakery puede extraer archivos de WIM comprimidos sólidos o archivos "ESD" (.esd), al igual que los archivos WIM (.wim) normales.. However, Microsoft sometimes distributes ESD files with encrypted segments; PEBakery cannot extract such files until they have been decrypted.
 
-WIM divididos: PEBakery no admite la extracción de archivos WIM divididos (.swm) en este momento.
+WIM divididos: PEBakery admite la extracción de archivos WIM divididos (.swm) usando el argumento `Split=`.
 
 Este comando usa la [biblioteca de imágenes de Windows de código abierto (wimlib)](https://wimlib.net/).
 
@@ -50,4 +51,23 @@ Este ejemplo extraerá (aplicará) todo el contenido de la primera imagen de *C:
 
 ```pebakery
 WimApply,C:\Temp\boot.wim,1,C:\Temp\Target
+```
+
+### Ejemplo 2
+
+Este ejemplo extraerá (aplicará) todo el contenido de la primera imagen de un WIM dividido *C:\Temp\boot.swm* a una carpeta llamada *C:\Temp\Target*.
+
+Para este ejemplo *C:\Temp\boot.swm* se divide en 5 partes:
+
+```
+C:\Temp\
+|--- \boot.swm
+|--- \boot2.swm
+|--- \boot3.swm
+|--- \boot4.swm
+|--- \boot5.swm
+```
+
+```pebakery
+WimApply,C:\Temp\boot.wim,1,C:\Temp\Target,Split="C:\Temp\boot*.swm"
 ```
