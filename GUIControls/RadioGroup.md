@@ -15,7 +15,7 @@ Un grupo de botones de radio Solo se puede seleccionar un botón de opción por 
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Caption | Etiqueta que se muestra en la parte superior del grupo de radio. Use `""` para ninguno. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `14` - El ID de control que especifica que este es un grupo de radio. |
+| ControlID | `14` - El ID del control que especifica que este es un grupo de radio. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
