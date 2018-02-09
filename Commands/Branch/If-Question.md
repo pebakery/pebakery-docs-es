@@ -58,23 +58,23 @@ Author=Homes32
 
 [process]
 // Ejecute un solo comando si el usuario elige SÍ
-If,QUESTION,"Do you like green eggs and ham?",Message,"You answered YES."
+If,QUESTION,"¿Te gustan los huevos verdes y el jamón?",Message,"Usted respondió SÍ."
 
 // Ejecute otra sección si el usuario elige SÍ
-If,QUESTION,"Would you like to run another section?",Run,%ScriptFile%,Run-Yes
+If,QUESTION,"¿Te gustaría ejecutar otra sección?",Run,%ScriptFile%,Run-Yes
 
 // También podemos usar instrucciones Block para ejecutar comandos adicionales
 // o usar una condición Else para realizar otra acción cuando el usuario elija No.
-If,QUESTION,"Are you Sure you want to continue?",Begin
-  Message,"Processing will continue..."
+If,QUESTION,"¿Estás seguro de que quieres continuar?",Begin
+  Message,"El procesamiento continuará..."
 End
 Else,Begin
-  Message,"Processing will stop."
-  Exit,"User requested stop."
+  Message,"El procesamiento se detendrá."
+  Exit,"El usuario solicitó detener."
 End
 
 [Run-Yes]
-Message,"Running another section..."
+Message,"Ejecutando otra sección..."
 ```
 
 ### Ejemplo 2
@@ -94,23 +94,23 @@ Author=Homes32
 [process]
 // Ejecutar un solo comando si el usuario elige SÍ
 // Elijir SÍ como la respuesta predeterminada después de 10 segundos
-If,QUESTION,"Do you like green eggs and ham?",10,Yes,Message,"You answered YES."
+If,QUESTION,"¿Te gustan los huevos verdes y el jamón?",10,Yes,Message,"Usted respondió SÍ."
 
 // Ejecutar otra sección si el usuario elige SÍ
-// Elijir SÍ como la respuesta predeterminada después de 10 segundos
-If,QUESTION,"Would you like to run another section?",10,No,Run,%ScriptFile%,Run-Yes
+// Elegir SÍ como la respuesta predeterminada después de 10 segundos
+If,QUESTION,"¿Te gustaría ejecutar otra sección?",10,No,Run,%ScriptFile%,Run-Yes
 
 // También podemos usar instrucciones Block para ejecutar comandos adicionales
 // o usar una condición Else para realizar otra acción cuando el usuario elija No.
 // Elijir SÍ como la respuesta predeterminada después de 10 segundos
-If,QUESTION,"Are you Sure you want to continue?",10,Yes,Begin
-  Message,"Processing will continue..."
+If,QUESTION,"¿Estás seguro de que quieres continuar?",10,Yes,Begin
+  Message,"El procesamiento continuará..."
 End
 Else,Begin
-  Message,"Processing will stop."
-  Exit,"User requested stop."
+  Message,"El procesamiento se detendrá."
+  Exit,"El usuario solicitó detener."
 End
 
 [Run-Yes]
-Message,"Running another section..."
+Message,"Ejecutando otra sección..."
 ```
