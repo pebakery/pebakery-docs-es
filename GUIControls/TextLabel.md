@@ -15,7 +15,7 @@ Muestra una línea de texto.
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Caption | Texto que se muestra en el control. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `1` - El ID de control que especifica que esta es una etiqueta de texto. |
+| ControlID | `1` - El ID del control que especifica que esta es una etiqueta de texto. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
