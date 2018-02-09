@@ -15,7 +15,7 @@ Un botón circular que puede tener solo un botón de opción seleccionado en la 
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Caption | Etiqueta que se muestra al lado del botón de radio. Use `""` para ninguno. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `11` - El ID de control que especifica que se trata de un botón de opción. |
+| ControlID | `11` - El ID del control que especifica que se trata de un botón de opción. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
