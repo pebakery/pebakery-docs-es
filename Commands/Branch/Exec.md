@@ -87,6 +87,6 @@ Author=Homes32
 [process]
 
 [Open-File]
-Message,"Opening file: %file%"
+Message,"Abriendo archivo: %file%"
 ShellExecute,Open,notepad.exe,%file%
 ```
