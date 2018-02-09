@@ -15,7 +15,7 @@ Una lista desplegable que le permite seleccionar un solo valor.
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Value | El valor actualmente seleccionado por el cuadro combinado. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `4` - El ID de control que especifica que se trata de un cuadro combinado. |
+| ControlID | `4` - El ID del control que especifica que se trata de un cuadro combinado. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
