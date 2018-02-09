@@ -54,16 +54,16 @@ Author=Homes32
 
 [process]
 // Declaración única If-Else. Creará un archivo de texto si aún no existe.
-If,Not,ExistFile,C:\Temp\myFile.txt,Message,"File does not exist",INFORMATION
-Else,Message,"File already exists",INFORMATION
+If,Not,ExistFile,C:\Temp\myFile.txt,Message,"El archivo no existe",INFORMATION
+Else,Message,"El archivo ya existe",INFORMATION
 
 // Instrucción If-Else utilizando un bloque de comandos para ejecutar comandos múltiples.
 If,ExistFile,C:\Temp\myFile.txt,Begin
-  TXTAddLine,C:\Temp\myFile.txt,"Goodbye World!",APPEND
+  TXTAddLine,C:\Temp\myFile.txt,"¡Adiós mundo!",APPEND
 End
 Else,Begin
   FileCreateBlank,C:\Temp\myFile.txt
-  TXTAddLine,C:\Temp\myFile.txt,"Hello World!",APPEND
+  TXTAddLine,C:\Temp\myFile.txt,"¡Hola Mundo!",APPEND
 End
 
 ShellExecute,Open,C:\Temp\myFile.txt
