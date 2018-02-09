@@ -15,7 +15,7 @@ Un hipervínculo que abrirá una página web en el navegador predeterminado.
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Caption | Texto que se muestra en el control. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `10` - El ID de control que especifica que esta es una etiqueta web. |
+| ControlID | `10` - El ID del control que especifica que esta es una etiqueta web. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
