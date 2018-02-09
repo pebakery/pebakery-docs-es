@@ -38,7 +38,7 @@ El comando `Set,...,PERMANENT` no se debe usar para cambiar los valores de contr
 
 ## Ejemplos
 
-Define variables during script execution.
+Define variables durante la ejecución del script.
 
 ### Ejemplo 1
 
@@ -67,7 +67,7 @@ Webget,%DownloadURL%,C:\Temp
 
 [Interface]
 pFileBox1=C:\Images\,1,13,23,44,230,20,dir
-pTextLabel1="Select your source directory:",1,1,23,25,230,18,8,Bold
+pTextLabel1="Seleccione su directorio fuente:",1,1,23,25,230,18,8,Bold
 ```
 
 ### Ejemplo 2
