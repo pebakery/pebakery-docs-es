@@ -60,15 +60,15 @@ If,%pCheckBox2%,Equal,True,Run,%ScriptFile%,Copy-Files
 
 [Register-Files]
 // Hacer algo...
-Message,"Registering Files...",INFORMATION,5
+Message,"Registrando archivos...",INFORMATION,5
 
 [Copy-Files]
 // Hacer algo...
-Message,"Copying Files...",INFORMATION,5
+Message,"Copiando archivos...",INFORMATION,5
 
 [Interface]
-pCheckBox1="Register Some Files",1,3,10,14,143,18,False
-pCheckBox2="Copy files",1,3,10,36,142,18,True
+pCheckBox1="Registrar algunos archivos",1,3,10,14,143,18,False
+pCheckBox2="Copiar archivos",1,3,10,36,142,18,True
 ```
 
 ### Ejemplo 2
@@ -90,12 +90,12 @@ Author=Homes32
 
 If,Not,ExistFile,%file%,Begin
   FileCreateBlank,%file%
-  TXTAddLine,%file%,"Hello World!",Append
+  TXTAddLine,%file%,"¡Hola Mundo!",Append
 End
 
 Run,%ScriptFile%,Open-File,%file%
 
 [Open-File]
-Echo,"Opening file: #1"
+Echo,"Abriendo archivo: #1"
 ShellExecute,Open,notepad.exe,#1
 ```
