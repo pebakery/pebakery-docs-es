@@ -14,7 +14,7 @@ Un cuadro de entrada que acepta un número entre un rango mínimo y máximo dete
 | --- | --- |
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `2` - El ID de control que especifica que este es un cuadro numérico. |
+| ControlID | `2` - El ID del control que especifica que este es un cuadro numérico. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
