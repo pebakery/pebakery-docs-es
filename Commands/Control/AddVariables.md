@@ -1,6 +1,6 @@
 # AddVariables (Agregar variables)
 
-Lee variables de otra sección, script o archivo en el entorno de tiempo de ejecución del script actual.
+Leer variables de otra sección, script o archivo en el entorno de tiempo de ejecución del script actual.
 
 ## Sintaxis
 
