@@ -17,7 +17,7 @@ CopyOrExpand,<SrcFile>,<DestPath>,[PRESERVE],[NOWARN]
 | SrcFile | La ruta completa del archivo para copiar. Los comodines (*,?) Se pueden usar para copiar y expandir archivos múltiples. |
 | DestPath | La ruta completa donde se copiará o extraerá el archivo. |
 
-### Flags
+### Flags (Indicadores)
 
 | Flag | Descripción |
 | --- | --- |
