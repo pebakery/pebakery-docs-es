@@ -16,12 +16,12 @@ Expand,<CabFile>,<DestDir>,[FileName],[PRESERVE],[NOWARN]
 | DestDir | Directorio donde se extraerán los archivos. |
 | FileName | **(Opcional)** Extraer solo este archivo específico. |
 
-### Flags
+### Flags (Indicadores)
 
 | Flag | Descripción |
 | --- | --- |
 | PRESERVE | **(Opcional)** No sobrescribir los archivos existentes cuando `Solo archivo` (`SingleFile`) es especificado. |
-| NOWARN | **(Opcional)** No registre una advertencia de sobrescritura si se sobrescribe un archivo al extraer un solo archivo. |
+| NOWARN | **(Opcional)** No registrar una advertencia de sobrescritura si se sobrescribe un archivo al extraer un solo archivo. |
 
 Flags se puede especificar en cualquier orden.
 
