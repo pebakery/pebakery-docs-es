@@ -15,7 +15,7 @@ Una caja que se puede "marcar" o "desmarcar".
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Caption | Etiqueta que se muestra junto a la casilla de verificación. Utilizar `""` para ninguno. |
 | Visibility | `True`/`False` - Mostrar u ocultar el control. |
-| ControlID | `3` - El ID de control que especifica que se trata de una casilla de verificación. |
+| ControlID | `3` - El ID del control que especifica que se trata de una casilla de verificación. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
