@@ -64,6 +64,6 @@ IniWrite,C:\myConfig.ini,Config,ShowWindow,%pCheckbox1%
 IniWrite,C:\myConfig.ini,Config,MyString,%pText1%
 
 [Interface]
-pText1="Show this text:",1,1,10,8,106,18,8,Normal
-pCheckbox1="Show Window?",1,3,10,32,278,18,False
+pText1="Mostrar este texto:",1,1,10,8,106,18,8,Normal
+pCheckbox1="¿Mostrar ventana?",1,3,10,32,278,18,False
 ```
