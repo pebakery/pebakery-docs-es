@@ -72,7 +72,7 @@ LoopLetter,%ScriptFile%,Search-Drives,A,Z
 If,EXISTFILE,%fullPath%,ShellExecute,OPEN,%fullPath%
 
 [Search-Drives]
-Echo,"Searching drive [#c:\]"
+Echo,"Buscando unidad [#c:\]"
 Set,%fullPath%,#c:\%searchFile%
 If,EXISTFILE,%fullPath%,Loop,BREAK
 ```
