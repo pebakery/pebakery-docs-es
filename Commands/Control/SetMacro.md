@@ -65,11 +65,11 @@ WebGetIfNotExistEx,"https://zlib.net/zlib-1.2.11.tar.gz",%BaseDir%\zlib.tar.gz
 Echo,"Checking for #2..."
 If,Not,ExistFile,#2,Begin
 // El archivo no existe. ¡Vamos a descargarlo!
-Echo,"Downloading #2..."
+Echo,"Descargando #2..."
 WebGet,#1,#2
 End
 Else,Begin
 // El archivo ya existe en el disco.
-Echo,"#2 found! Skipping download."
+Echo,"#2 encontrado omitiendo la descarga."
 End
 ```
