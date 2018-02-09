@@ -99,7 +99,7 @@ If,%CB_Asso_#c%,Equal,True,Run,%ScriptFile%,Register-Ext,%IN_Asso_#c%
 [Register-Ext]
 // #1 es el primer (y único) parámetro que pasamos a
 // esta sección y representa el valor del cuadro de entrada actual
-Echo,"Registering file extension [#1]..."
+Echo,"Registrando extensión de archivo [#1]..."
 
 [Interface]
 pTextLabel5_1="File associations:",1,1,9,21,99,18,8,Bold
