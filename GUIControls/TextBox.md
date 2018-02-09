@@ -15,7 +15,7 @@ Un cuadro de entrada que acepta una sola línea de texto.
 | Name | Nombre único utilizado para hacer referencia a este control. |
 | Caption | La etiqueta que se muestra sobre el cuadro de texto. Use `""` para ninguno. |
 | Visibility | `True`/`False` - Mostrar u Ocultar el control. |
-| ControlID | `0` - El ID de control que especifica que se trata de un cuadro de texto. |
+| ControlID | `0` - El ID del control que especifica que se trata de un cuadro de texto. |
 | PosX | Posición horizontal medida desde la esquina superior izquierda del control. |
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
