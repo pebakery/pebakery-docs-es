@@ -34,11 +34,11 @@ myvar1="Homes32"
 myvar2="ChrisR"
 
 [Interface]
-pText1="Show this text:",1,1,10,8,106,18,8,Normal
-pCheckbox1="Show Window?",1,3,10,32,278,18,False
+pText1="Mostrar este texto:",1,1,10,8,106,18,8,Normal
+pCheckbox1="¿Mostrar ventana?",1,3,10,32,278,18,False
 
 [Interface-2]
-pText1="Show other text:",1,1,10,8,106,18,8,Normal
+pText1="Mostrar otro texto:",1,1,10,8,106,18,8,Normal
 ```
 
 C:\myFile2.ini:
@@ -49,8 +49,8 @@ myvar1="Homes32"
 myvar2="lancelot"
 
 [Interface]
-pText1="Write something here:",1,1,10,8,106,18,8,Normal
-pCheckbox1="Show Window?",1,3,10,32,278,18,False
+pText1="Escribe algo aquí:",1,1,10,8,106,18,8,Normal
+pCheckbox1="¿Mostrar ventana?",1,3,10,32,278,18,False
 ```
 
 En el siguiente ejemplo, el archivo `SrcFile` *C:\myFile1.ini* se fusionará en `DestFile` *C:\myFile2.ini*
@@ -67,11 +67,11 @@ myvar1="Homes32"
 myvar2="ChrisR"
 
 [Interface]
-pText1="Show this text:",1,1,10,8,106,18,8,Normal
-pCheckbox1="Show Window?",1,3,10,32,278,18,False
+pText1="Mostrar este texto:",1,1,10,8,106,18,8,Normal
+pCheckbox1="¿Mostrar ventana?",1,3,10,32,278,18,False
 
 [Interface-2]
-pText1="Show other text:",1,1,10,8,106,18,8,Normal
+pText1="Mostrar otro texto:",1,1,10,8,106,18,8,Normal
 ```
 
 Como podemos ver, han sucedido varias cosas.
