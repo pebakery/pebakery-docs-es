@@ -69,7 +69,7 @@ If,EXISTFILE,%fullPath%,ShellExecute,OPEN,%fullPath%
 [Search-Drives]
 Set,%drive%,A
 StrFormat,Inc,%drive%,#c
-Echo,"Searching drive [%drive%:\]"
+Echo,"Buscando unidad [%drive%:\]"
 Set,%fullPath%,%drive%:\%searchFile%
 If,EXISTFILE,%fullPath%,Loop,BREAK
 ```
