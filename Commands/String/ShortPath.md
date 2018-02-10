@@ -14,8 +14,8 @@ StrFormat,ShortPath,<Path>,<%DestVar%>
 
 | Argumento | Descripción |
 | --- | --- |
-| Path | The full path to convert. |
-| DestVar | The variable where the result will be saved. |
+| Path | El camino completo para convertir. |
+| DestVar | La variable donde se guardará el resultado. |
 
 ## Observaciones
 
