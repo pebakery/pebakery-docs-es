@@ -16,7 +16,7 @@ Encode,<ScriptFile>,<DirName>,<FilePath>
 | --- | --- |
 | ScriptFile | La ruta completa al script **Sugerencia:** Use `%scriptFile%` para hacer referencia al script actual. |
 | DirName | La carpeta en la que se colocará el archivo codificado. Si `DirName` no existe, se creará. Si los archivos que se van a codificar ya existen en el `DestDir` del script, se sobrescribirán.|
-| FilePath | The full path of the file(s) to be encoded. Wildcards are accepted. |
+| FilePath | La ruta completa del archivo(s) a codificar. Se aceptan comodines. |
 
 ## Observaciones
 
