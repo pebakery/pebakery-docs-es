@@ -28,7 +28,7 @@ Un botón circular que puede tener solo un botón de opción seleccionado en la 
 
 ## Observaciones
 
-TEl `Valor` del botón de opción se puede leer haciendo referencia al control `Nombre` como una variable. Ej. `%RadioButton1%` o usando el comando `ReadInterface`.
+El `Valor` del botón de opción se puede leer haciendo referencia al control `Nombre` como una variable. Ej. `%RadioButton1%` o usando el comando `ReadInterface`.
 
 ## Relacionado
 
