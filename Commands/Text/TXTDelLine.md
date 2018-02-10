@@ -31,7 +31,7 @@ PEBakery optimizará múltiples comandos `TXTDelLine` en una fila en un único c
 
 ### Ejemplo 1
 
-Assume we have the following file:
+Supongamos que tenemos el siguiente archivo:
 
 ```pebakery
 // C:\myFile.txt
