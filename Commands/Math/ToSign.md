@@ -31,7 +31,7 @@ Ninguna.
 ```pebakery
 [Main]
 Title=Math-ToSign Ejemplo
-Description=Mostrar el uso del comando the Math,ToSign
+Description=Mostrar el uso del comando Math,ToSign
 Author=Homes32
 Level=5
 
