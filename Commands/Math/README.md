@@ -10,7 +10,7 @@ Haga clic en un nombre de comando para obtener una descripción detallada.
 | [Math,BoolNot](./BoolNot.md) | Realiza una prueba NO en dos valores booleanos. |
 | [Math,BitOr](./BitOr.md) | Realiza una operación O bit a bit. |
 | [Math,BitShift](./BitShift.md) | Realiza una operación de cambio de bit. |
-| [Math,BitXor](./BitXor.md) | Realiza una operación OR exclusiva a nivel de bits. |
+| [Math,BitXor](./BitXor.md) | Realiza una operación O exclusiva a nivel de bits. |
 | [Math,BoolAnd](./BoolAnd.md) | Realiza una prueba Y en dos valores booleanos. |
 | [Math,BitNot](./BitNot.md) | Realiza una operación NO bit a bit. |
 | [Math,BoolOr](./BoolOr.md) | Realiza una prueba O en dos valores booleanos. |
