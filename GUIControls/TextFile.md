@@ -20,7 +20,7 @@ Muestra un archivo de texto incrustado en el script.
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
 | Height | Altura del control. |
-| ToolTip | **(Opcional)** Help Text that will be shown when the user hovers over the control. This argument must always begin with a double underscore `__`. *Ejemplo:* `"__Alguna información útil"` |
+| ToolTip | **(Opcional)** Texto de ayuda que se mostrará cuando el usuario pase el control. Este argumento siempre debe comenzar con un doble guion bajo `__`. *Ejemplo:* `"__Alguna información útil"` |
 
 ## Observaciones
 
