@@ -61,7 +61,7 @@ StrFormat,date,%longDate1%,"dddd, MMMM dd, yyyy"
 StrFormat,date,%longDate2%,"ddd, MMM dd, yyy"
 StrFormat,date,%shortDate1%,"yyyy-mm-dd"
 StrFormat,date,%shortDate2%,"mm/dd/yyy"
-// Formatos de tiempo comunes
+// Formatos de hora comunes
 StrFormat,date,%time1%,"hh:nn"
 StrFormat,date,%time2%,"hh:nn:ss"
 StrFormat,date,%time3%,"hh:nn:ss:z"
