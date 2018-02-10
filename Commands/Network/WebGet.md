@@ -17,7 +17,7 @@ WebGet,<URL>,<DestPath>[,<HashType>,<HashDigest>]
 | HashType   | **(Opcional)** Tipo de hash para calcular. Tipos de hash admitidos: `MD5`, `SHA1`, `SHA256`, `SHA384`, `SHA512`. |
 | HashDigest | **(Opcional)** El resumen Hash utilizado para verificar el archivo descargado. |
 
-`HashType` and `HashDigest` must be used at same time.
+`HashType` y `HashDigest` deben ser usados al mismo tiempo.
 
 ## Observaciones
 
@@ -46,7 +46,7 @@ El siguiente script es un ejemplo de cómo podemos usar WebGet, así como anular
 ```pebakery
 [Main]
 Title=WebGet Example
-Description=Show usage of the WebGet Command
+Description=Mostrar el uso del comando WebGet
 Author=Homes32
 Level=5
 Version=1
@@ -63,11 +63,11 @@ WebGetIfNotExistEx,"https://zlib.net/zlib-1.2.11.tar.gz",%BaseDir%\zlib.tar.gz
 Echo,"Checking for #2..."
 If,Not,ExistFile,#2,Begin
 // ¡El archivo no existe!. ¡Vamos a descargarlo!
-Echo,"Downloading #2..."
+Echo,"Descargando #2..."
 WebGet,#1,#2
 End
 Else,Begin
 // El archivo ya existe en el disco.
-Echo,"#2 already exists! Skipping download."
+Echo,"#2 ¡ya existe! Saltarse la descarga."
 End
 ```
