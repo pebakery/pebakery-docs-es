@@ -25,7 +25,7 @@ Si el `Command`(comando) es `Run` (ejecutar), *reason* (razón) de la salida pas
 | DONE | Todos los comandos fueron procesados sin errores. |
 | STOP | El usuario hizo clic en el botón *STOP*. |
 | ERROR | Un script terminó debido a un error. |
-| COMMAND | Un script finalizó debido a un comando `System, Halt` or `System, Exit`. |
+| COMMAND | Un script finalizó debido a un comando `System, Halt` o `System, Exit`. |
 | EXCEPTION | Se produjo una excepción del sistema durante el procesamiento. *Incluido para compatibilidad con Winbuilder 082. PEBakery no devuelve este motivo.*|
 
 ## Observaciones
