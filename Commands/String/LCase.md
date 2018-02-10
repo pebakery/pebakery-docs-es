@@ -36,9 +36,9 @@ Version=1
 Author=Homes32
 
 [variables]
-%string%="The Quick BROWN FOX Jumps Over The LAZY DOG."
+%string%="El Veloz ZORRO MARRON Salta sobre el PERRO PEREZOSO."
 
 [process]
 StrFormat,LCase,%string%,%result%
-Message,"Lowercase string is: %result%"
+Message,"Cadena en minúsculas es: %result%"
 ```
