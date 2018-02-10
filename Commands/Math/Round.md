@@ -14,7 +14,7 @@ Math,Round,<%DestVar%>,<Value>,<Unit>
 | --- | --- |
 | DestVar | La variable donde se almacenará el resultado. |
 | Value | El número a redondear. |
-| Unit | Unidad para redondear a. (ex. Nearest 10, 20, 100, etc) |
+| Unit | Unidad para redondear a. (ej. Más cercano 10, 20, 100, etc) |
 
 ## Observaciones
 
