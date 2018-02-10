@@ -4,7 +4,7 @@ Utiliza un "archivo de lista" para extraer uno o más archivos o árboles de dir
 
 Se admiten comodines, lo que permite copiar múltiples archivos o directorios a la vez.
 
-Note that `WimExtractBulk` is intended for extracting only a subset of a WIM image. If you want to extract or "apply" a full WIM image use the `WimApply` command instead.
+Tenga en cuenta que `WimExtractBulk` está destinado a extraer solo un subconjunto de una imagen WIM. Si desea extraer o "aplicar" una imagen WIM completa, use el comando `WimApply` en su lugar.
 
 ## Sintaxis
 
