@@ -67,6 +67,6 @@ SB_CfgProfile=Simple,1,4,135,10,150,21,Simple,Advanced,_Toggle_Advanced_Options_
 TXT_FilePath="Ruta de archivo",1,0,16,78,200,21,C:\Temp
 BVL_AdvOptions=pBevel1,0,12,10,115,170,80,
 LBL_AdvOptions="Opciones avanzadas:",0,1,23,120,147,18,8,Bold
-CB_Adv1="Option 1",0,3,20,150,145,20,True
-CB_ADV2="Option 2",0,3,20,170,135,20,True
+CB_Adv1="Opción 1",0,3,20,150,145,20,True
+CB_ADV2="Opción 2",0,3,20,170,135,20,True
 ```
