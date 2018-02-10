@@ -16,6 +16,8 @@ DirMake,<DestDir>
 
 ## Observaciones
 
+Ninguna.
+
 ## Relacionado
 
 [DirCopy](./DirCopy.md), [DirDelete](./DirDelete.md), [DirMove](/DirMove.md)
