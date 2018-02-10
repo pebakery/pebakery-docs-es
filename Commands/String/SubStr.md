@@ -19,7 +19,7 @@ StrFormat,SubStr,<String>,<StartPos>,<Count>,<%DestVar%>
 
 ## Observaciones
 
-If `Count` exceeds the string length then the entire remainder of the string is returned.
+Si `Count` excede la longitud de cadena se devuelve todo el resto de la cadena.
 
 ## Relacionado
 
