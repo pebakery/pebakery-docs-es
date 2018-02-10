@@ -53,7 +53,7 @@ Este comando usa la [biblioteca de imágenes de Windows de código abierto (wiml
 Este ejemplo extrae un solo archivo de la primera imagen de *C:\Temp\boot.wim* a una carpeta llamada *C:\Temp\Target*.
 
 ```pebakery
-Echo,"Extracting Regedit..."
+Echo,"Extrayendo Regedit..."
 WimExtract,C:\Temp\boot.wim,1,C:\Temp\Target,Windows\regedit.exe
 ```
 
