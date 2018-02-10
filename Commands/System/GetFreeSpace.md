@@ -19,7 +19,7 @@ System,GetFreeSpace,<Path>,<%DestVar%>
 
 PEBakery calcula 1 Megabyte = 1024 Bytes.
 
-The free space size can be converted from megabytes to KB/GB/TB/PB using various `StrFormat` commands.
+El tamaño de espacio libre se puede convertir de megabytes a KB/GB/TB/PB usando varios comandos `StrFormat`.
 
 ## Relacionado
 
