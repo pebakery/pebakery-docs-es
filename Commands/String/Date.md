@@ -22,9 +22,9 @@ StrFormat,Round,<%DestVar%>,<FormatString>
 | Especificador de formato | Descripción | Ejemplos |
 | --- | --- | --- |
 | d | Día de la semana | `d` - day<br/>`dd` - día, incluidos los ceros a la izquierda<br/>`ddd` - Día 3 letras<br/>`dddd` - Día completo |
-| m | Mes | `m` - mes<br/>`mm` - mes incluidos los ceros a la izquierda<br/>`mmm` - mes 3 ltras<br/>`mmmm` - Mes completo |
+| m | Mes | `m` - mes<br/>`mm` - mes incluidos los ceros a la izquierda<br/>`mmm` - mes 3 letras<br/>`mmmm` - Mes completo |
 | y | Año | `y` - año 2 digitos<br/>`yy` - año 2 digitos<br/>`yyyy` - año 4 digitos |
-| h | Horas | `h` - hora del dia<br/>`hh` - hora del dia including any leading zeros |
+| h | Horas | `h` - hora del dia<br/>`hh` - hora del dia incluidos los ceros a la izquierda |
 | n | Minutos | `n` - minutes<br/>`nn` - minutos incluidos los ceros a la izquierda |
 | s | Segundos | `s` - segundos<br/>`ss` - segundos incluidos los ceros a la izquierda |
 | z | Milisegundos | `z` - milisegundos |
