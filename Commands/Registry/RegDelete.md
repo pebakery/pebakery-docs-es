@@ -19,7 +19,7 @@ RegDelete,<HKEY>,<KeyPath>[,ValueName]
 || HKEY_CURRENT_USER or HKCU |
 || HKEY_USERS or HKU |
 | KeyPath | La ruta completa de la clave de registro. |
-| ValueName | **[Opcional]** Si se especifica solo el valor será eliminado. |
+| ValueName | **[Opcional]** Si se especifica, solo se borrará este valor (no toda la clave). |
 
 ## Observaciones
 
