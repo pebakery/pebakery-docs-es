@@ -21,7 +21,7 @@ StrFormat,BytesToInt,<String>,<%DestVar%>
 
 Esta operación puede usarse para invertir el comando `StrFormat,IntToBytes` y convertir los tamaños legibles para humanos en formato legible por máquina.
 
-El espacio en blanco de la cadena se descarta, por lo que `5,123 GB` se trata de la misma manera que` 5,123 GB`.
+El espacio en blanco de la cadena se descarta, por lo que `5,123GB` se trata de la misma manera que` 5,123 GB`.
 
 ## Relacionado
 
