@@ -1,22 +1,22 @@
 # System,SetLocal
 
-Starts localization of variables within a script.
+Inicia la localización de variables dentro de un script.
 
-Localized variables contain a copy of their original value and any further modifications are isolated until a matching `System,EndLocal` command is encountered or the end of the current [Section] is reached.
+Las variables localizadas contienen una copia de su valor original y cualquier modificación adicional se aislará hasta que se encuentre un comando correspondiente `System,EndLocal` o se llegue al final de la [Sección] actual.
 
-## Syntax
+## Sintaxis
 
 ```pebakery
 System,SetLocal
 ```
 
-### Arguments
+### Argumentos
 
-This command has no arguments.
+Este comando no tiene argumentos.
 
-### Return Values
+### Valores de retorno
 
-| Return Value | Description |
+| Valor de retorno | Descripción |
 | --- | --- |
 | #r | Cuando se llama `System,EndLocal` se descarta el contenido de las variables aisladas. El token `#r` no se ve afectado por las restricciones de `System,SetLocal` y puede usarse para devolver el valor de una variable aislada al proceso principal. `#r` es volátil, por lo que si necesita conservar el valor de retorno cópielo en una variable local. |
 
@@ -28,7 +28,7 @@ Este comando está destinado a su uso en scripts de "biblioteca" que contienen c
 
 [System,EndLocal](./EndLocal.md)
 
-## Examples
+## Ejemplos
 
 ### Ejemplo 1
 
