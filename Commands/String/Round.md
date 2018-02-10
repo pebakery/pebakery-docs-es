@@ -23,7 +23,7 @@ StrFormat,Round,<%Integer%>,<RoundTo>
 
 ## Observaciones
 
-La variable `Integer` se sobrescribe con el resultado de la operación `StrFormat, Round`.
+La variable `Integer` se sobrescribe con el resultado de la operación `StrFormat,Round`.
 Este comando se puede usar junto con `StrFormat,IntToBytes` para regresar al tamaño legible para humanos redondeado al entero más cercano.
 
 Para operaciones de redondeo matemático use el comando `Math, Round`.
