@@ -23,7 +23,7 @@ StrFormat,Ceil,<%Integer%>,<CeilTo>
 
 ## Observaciones
 
-La variable `Integer` se sobrescribe con el resultado de la operación `StrFormat, Ceil`.
+La variable `Integer` se sobrescribe con el resultado de la operación `StrFormat,Ceil`.
 
 Este comando se puede usar junto con `StrFormat,IntToBytes` para regresar al tamaño legible para humanos redondeado al techo especificado.
 
