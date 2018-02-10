@@ -14,7 +14,7 @@ ShellExecuteDelete,<Action>,<FilePath>[,Params][,WorkDir][,%ExitOutVar%]
 | --- | --- |
 | Action | El método utilizado para iniciar el archivo externo. Puede ser uno de los siguientes: |
 || Open - Si el archivo es un ejecutable, se lanzará. Si el archivo no es ejecutable, se abrirá con la aplicación predeterminada asociada a ese tipo de archivo.  |
-|| Hide - El archivo se iniciará en modo oculto. Los programas de la consola que escriben en las secuencias StdOut y StdErr tendrán su salida redireccionada a la ventana de compilación PEBakerys y se escribirá en el registro. |
+|| Hide - El archivo se iniciará en modo oculto. Los programas de la consola que escriben en las secuencias StdOut y StdErr tendrán su salida redireccionada a la ventana de compilación PEBakery y se escribirá en el registro. |
 || Print - Imprimir el contenido del archivo con la impresora predeterminada del sistema. |
 || Explore - Abra una ventana del explorador. (Se puede usar para mostrar los contenidos del sistema de archivos local). |
 || Min - Igual que Open, pero inicia el programa minimizado a la barra de tareas. |
