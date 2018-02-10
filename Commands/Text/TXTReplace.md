@@ -20,9 +20,9 @@ TXTReplace,<FileName>,<OldString>,<NewString>
 
 Se debe tener precaución al usar este comando, ya que **cualquier** instancia de `OldString` será reemplazada, incluso si es parte de otra palabra.
 
-If `FileName` does not exist the operation will fail.
+Si `FileName` no existe, la operación fallará.
 
-PEBakery will optimize multiple `TXTReplace` in a row to single command.
+PEBakery optimizará múltiples `TXTReplace` en una fila para un solo comando.
 
 ## Relacionado
 
