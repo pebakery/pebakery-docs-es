@@ -237,48 +237,48 @@ pTextLabel2=Hidden,0,1,20,50,280,18,8,Normal
 #### Escribir texto
 
 ```pebakery
-// Source : pTextBox1=Display,1,0,20,20,200,21,StringValue
-// Result : pTextBox1=PEBakery,1,0,20,20,200,21,StringValue
+// Origen : pTextBox1=Display,1,0,20,20,200,21,StringValue
+// Resultado : pTextBox1=PEBakery,1,0,20,20,200,21,StringValue
 WriteInterface,Text,%ScriptFile%,Interface,pTextBox1,PEBakery
 ```
 
 #### Escribir visibilidad
 
 ```pebakery
-// Source : pTextLabel1=Display,1,1,20,50,230,18,8,Normal
-// Result : pTextLabel1=Display,0,1,20,50,230,18,8,Normal
+// Origen : pTextLabel1=Display,1,1,20,50,230,18,8,Normal
+// Resultado : pTextLabel1=Display,0,1,20,50,230,18,8,Normal
 WriteInterface,Visible,%ScriptFile%,Interface,pTextLabel1,False
 ```
 
 #### Escribir valor
 
 ```pebakery
-// Source : pTextBox1=Display,1,0,20,20,200,21,StringValue
-// Result : pTextBox1=Display,1,0,20,20,200,21,PEBakery
+// Origen : pTextBox1=Display,1,0,20,20,200,21,StringValue
+// Resultado : pTextBox1=Display,1,0,20,20,200,21,PEBakery
 WriteInterface,Value,%ScriptFile%,Interface,pTextBox1,PEBakery
 
-// Source : pNumberBox1=pNumberBox1,1,2,20,70,40,22,3,0,100,1
-// Result : pNumberBox1=pNumberBox1,1,2,20,70,40,22,2,0,100,1
+// Origen : pNumberBox1=pNumberBox1,1,2,20,70,40,22,3,0,100,1
+// Resultado : pNumberBox1=pNumberBox1,1,2,20,70,40,22,2,0,100,1
 WriteInterface,Value,%ScriptFile%,Interface,pNumberBox1,2
 
-// Source : pNumberBox1=pNumberBox1,1,2,20,70,40,22,3,0,100,1
-// Result : pNumberBox1=pNumberBox1,1,2,20,70,40,22,2,0,100,1
+// Origen : pNumberBox1=pNumberBox1,1,2,20,70,40,22,3,0,100,1
+// Resultado : pNumberBox1=pNumberBox1,1,2,20,70,40,22,2,0,100,1
 WriteInterface,Value,%ScriptFile%,Interface,pCheckBox1,%Dest%
 
-// Source : pComboBox1=A,1,4,20,130,150,21,A,B,C,D
-// Result : pComboBox1=B,1,4,20,130,150,21,A,B,C,D
+// Origen : pComboBox1=A,1,4,20,130,150,21,A,B,C,D
+// Resultado : pComboBox1=B,1,4,20,130,150,21,A,B,C,D
 WriteInterface,Value,%ScriptFile%,Interface,pComboBox1,B
 
-// Source : pRadioButton1=pRadioButton1,1,11,250,180,100,20,False
-// Result : pRadioButton1=pRadioButton1,1,11,250,180,100,20,True
+// Origen : pRadioButton1=pRadioButton1,1,11,250,180,100,20,False
+// Resultado : pRadioButton1=pRadioButton1,1,11,250,180,100,20,True
 WriteInterface,Value,%ScriptFile%,Interface,pRadioButton1,True
 
-// Source : pFileBox1=C:\Windows\notepad.exe,1,13,240,230,200,20,file
-// Result : pFileBox1=D:\PEBakery\Launcher.exe,1,13,240,230,200,20,file
+// Origen : pFileBox1=C:\Windows\notepad.exe,1,13,240,230,200,20,file
+// Resultado : pFileBox1=D:\PEBakery\Launcher.exe,1,13,240,230,200,20,file
 WriteInterface,Value,%ScriptFile%,Interface,pFileBox1,D:\PEBakery\Launcher.exe
 
-// Source : pRadioGroup1=pRadioGroup1,1,14,20,160,150,60,Option1,Option2,Option3,2
-// Result : pRadioGroup1=pRadioGroup1,1,14,20,160,150,60,Option1,Option2,Option3,0
+// Origen : pRadioGroup1=pRadioGroup1,1,14,20,160,150,60,Option1,Option2,Option3,2
+// Resultado : pRadioGroup1=pRadioGroup1,1,14,20,160,150,60,Option1,Option2,Option3,0
 WriteInterface,Value,%ScriptFile%,Interface,pRadioGroup1,0
 >>>>>>> develop
 ```
