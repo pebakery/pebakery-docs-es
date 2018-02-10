@@ -12,7 +12,7 @@ TXTDelEmptyLines,<FileName>
 
 | Argumento | Descripción |
 | --- | --- |
-| FileName | The full path of the file. |
+| FileName | La ruta completa del archivo. |
 
 ## Observaciones
 
