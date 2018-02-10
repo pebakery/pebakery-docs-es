@@ -18,9 +18,9 @@ StrFormat,Left,<String>,<Count>,<%DestVar%>
 
 ## Remarks
 
-`Integer` must be a positive value.
+`Integer` debe ser un valor positivo.
 
-If `Count` exceeds the string length then the entire string is returned.
+Si `Count` excede la longitud de cadena entonces se devuelve la cadena completa.
 
 ## Observaciones
 
