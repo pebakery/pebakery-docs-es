@@ -1,6 +1,6 @@
 # System,RefreshInterface
 
-Actualiza la interfaz gráfica deL script actual.
+Actualiza la interfaz gráfica del script actual.
 
 ## Sintaxis
 
@@ -14,7 +14,7 @@ Este comando no tiene argumentos.
 
 ## Observaciones
 
-Este comando se puede utilizar para actualizar la interfaz después de realizar cambios en el script, como cambiar a una nueva página de interfaz o cambiar el valor de un control de interfaz mediante el comando `Set, ..., PERMANENT`. This same behavior can be achieved manually with the "Refresh Script" button.
+Este comando se puede utilizar para actualizar la interfaz después de realizar cambios en el script, como cambiar a una nueva página de interfaz o cambiar el valor de un control de interfaz mediante el comando `Set, ..., PERMANENT`. Este mismo comportamiento se puede lograr manualmente con el botón "Actualizar script".
 
 PEBakery actualiza la interfaz automáticamente cuando se realizan cambios utilizando el comando `WriteInterface`.
 
