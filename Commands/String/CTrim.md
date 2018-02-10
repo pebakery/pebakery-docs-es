@@ -32,7 +32,7 @@ Este comando se puede utilizar para eliminar (recortar) los caracteres `\` al pr
 
 ```pebakery
 [Main]
-Title=StrFormat-CTrim Example
+Title=StrFormat-CTrim Ejemplo
 Description=Mostrar el uso de StrFormat,CTrim.
 Level=5
 Version=1
