@@ -10,11 +10,11 @@ StrFormat,PathCombine,<DirPath>,<FileName>,<%DestVar%>
 
 ### Argumentos
 
-| Argumento | Description |
+| Argumento | Descripción |
 | --- | --- |
-| DirPath | The path of the file. |
-| FileName | The name and extension of the file. |
-| DestVar | Variable where the result will be stored. |
+| DirPath | La ruta del archivo. |
+| FileName | El nombre y la extensión del archivo. |
+| DestVar | Variable donde se almacenará el resultado. |
 
 ## Observaciones
 
