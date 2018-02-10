@@ -27,7 +27,7 @@ Si `EnvVar` no existe `%DestVar%` contendrá un valor en blanco.
 
 ```pebakery
 [main]
-Title=GetEnv Example
+Title=GetEnv Ejemplo
 Description=Mostrar el uso del comando System,GetEnv.
 Level=5
 Version=1
