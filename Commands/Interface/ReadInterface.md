@@ -227,7 +227,7 @@ pTextLabel2=Hidden,0,1,20,50,280,18,8,Normal
 
 #### Leer texto
 ```pebakery
-// Return "Display"
+// Devolver "Visualización"
 ReadInterface,Text,%ScriptFile%,Interface,pTextBox1,%Dest%
 ```
 
