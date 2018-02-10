@@ -24,7 +24,7 @@ System,Load,<FilePath>,[NOREC]
 
 Este comando se puede utilizar para reconstruir el árbol del proyecto cuando se agrega o modifica un script y se realiza de forma similar al comando `System,LoadAll` con la excepción de que solo se cargan los archivos especificados. Esto puede ahorrar tiempo si no necesita actualizar todo el árbol del proyecto, que podría abarcar varios proyectos y docenas de scripts.
 
-Debido a una limitación del sistema, PEBakery no puede `Cargar` el script actual `%ScriptFile%` durante la compilación de un proyecto. El comando trndrá afecto después de que finalice la construcción actual.
+Debido a una limitación del sistema, PEBakery no puede `Cargar` el script actual `%ScriptFile%` durante la compilación de un proyecto. El comando tendrá afecto después de que finalice la construcción actual.
 
 ## Relacionado
 
