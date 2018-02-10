@@ -18,7 +18,7 @@ System,ErrorOff[,Lines]
 
 ## Observaciones
 
-Este comando le permite anular el comportamiento predeterminado de "Fallar en caso de error" de comandos como `FileCopy``RegRead`.
+Este comando le permite anular el comportamiento predeterminado de "Fallar en caso de error" de comandos como `FileCopy` `RegRead`.
 
 Aún se generará un mensaje de error en el registro, sin embargo, tendrá un estado `Muted`.
 
@@ -30,7 +30,7 @@ Aún se generará un mensaje de error en el registro, sin embargo, tendrá un es
 
 ```pebakery
 [Main]
-Title=ErrorOff Example
+Title=ErrorOff Ejemplo
 Author=Homes32
 Description=Mostrar el uso del comando System,ErrorOff.
 Version=1
@@ -42,12 +42,12 @@ Level=5
 
 [process]
 
-// No interrumpa el procesamiento si myFile.exe no se puede copiar a nuestro directorio de destino.
+// No interrumpir el procesamiento si myFile.exe no se puede copiar a nuestro directorio de destino.
 System,ERROROFF
 FileCopy,C:\Temp\myFile.exe,%TargetDir%\myFile.exe
 
 
-// No detenga el procesamiento si los siguientes valores de registro no existen.
+// No detener el procesamiento si los siguientes valores de registro no existen.
 System,ERROROFF,2
 RegRead,HKCR,Wow6432Node\Applications\vmware-mount.exe\shell\Mount\command,,%VMtmp%
 RegRead,HKLM,"CurrentControlSet\Services\Eventlog\Application\VMware Virtual Mount Service Extended",EventMessageFile,%VMtmp%
