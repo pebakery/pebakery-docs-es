@@ -34,7 +34,7 @@ Este comando está destinado a su uso en scripts de "biblioteca" que contienen c
 [Main]
 Title=SetLocal/EndLocal Ejemplo
 Author=Homes32
-Description=Mostrar el uso de los comandos System,SetLocal ay System,EndLocal.
+Description=Mostrar el uso de los comandos System,SetLocal y System,EndLocal.
 Version=1
 Level=5
 
