@@ -50,5 +50,5 @@ Author=Homes32
 DirSize,%Dir%,%Size%
 // Use StrFormat para convertir el tamaño a un formato más legible por humanos.
 StrFormat,IntToBytes,%Size%,%StrSize%
-Message,"Dir Size: %Size% bytes (%StrSize%)"
+Message,"Tamaño de Dir: %Size% bytes (%StrSize%)"
 ```
