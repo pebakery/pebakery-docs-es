@@ -20,7 +20,7 @@ Echo,<Message>[,WARN]
 
 | Flag | Descripción |
 | --- | --- |
-| WARN | **(Opcional)** FMarca el `Message` como una advertencia en el registro. |
+| WARN | **(Opcional)** Marca el `Message` como una advertencia en el registro. |
 
 ## Observaciones
 
