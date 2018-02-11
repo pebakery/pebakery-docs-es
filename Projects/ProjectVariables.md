@@ -6,7 +6,7 @@ Esta documentación se refiere a la sección `Variables` ubicada dentro del arch
 
 ## Sintaxis
 
-Las variables globales y las macros se definen con el formato estilo .INI `Key=Value`. Las variables deben estar encerradas en signos de porcentaje `%`.
+Las variables globales y las macros se definen con el formato estilo .INI `Key=Value` `(Clave=Valor)`. Las variables deben estar encerradas en signos de porcentaje `%`.
 
 ### Variables
 
