@@ -6,7 +6,7 @@ Esta documentación se refiere a la sección `Principal` ubicada dentro del arch
 
 ## Sintaxis
 
-Los datos del proyecto se almacenan en formato estilo .INI `Key = Value`.
+Los datos del proyecto se almacenan en formato estilo .INI `Key = Value` `(Clave = Valor)`.
 
 ## Valores
 
@@ -22,9 +22,9 @@ Los siguientes valores son utilizados por PEBakery para definir un proyecto. Los
 | Version | **(Opcional)** Número de versión del proyecto. |
 | Interface | **(Opcional)** Especifica la sección que contiene la Interfaz gráfica de usuario que se muestra actualmente. El valor predeterminado es `Interface`. |
 | PathSetting | `True`/`False` - Habilite la modificación de `SourceDir`,` TargetDir`, e `IsoFile` desde el cuadro de diálogo Configuración de PEBakery. |
-| SourceDir | Ruta completa a los archivos fuente de Windows utilizados para construir el proyecto. El valor se copia en la variable `GLOBAL` `% SourceDir%` al momento de la compilación. |
-| TargetDir | Ruta completa al directorio donde se construirá el proyecto. El valor se copia en la variable `GLOBAL` `% TargetDir% `en el momento de la compilación. |
-| IsoFile | Ruta completa al archivo .iso que se generará. El valor se copia en la variable `GLOBAL` `% IsoFile% `en el momento de la compilación. |
+| SourceDir | Ruta completa a los archivos fuente de Windows utilizados para construir el proyecto. El valor se copia en la variable `GLOBAL` `%SourceDir%` al momento de la compilación. |
+| TargetDir | Ruta completa al directorio donde se construirá el proyecto. El valor se copia en la variable `GLOBAL` `%TargetDir% `en el momento de la compilación. |
+| IsoFile | Ruta completa al archivo .iso que se generará. El valor se copia en la variable `GLOBAL` `%IsoFile% `en el momento de la compilación. |
 
 ## Observaciones
 
