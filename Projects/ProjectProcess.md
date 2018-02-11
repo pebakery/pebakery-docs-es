@@ -2,7 +2,7 @@
 
 Esta sección contiene comandos que se ejecutarán cada vez que se procese un script en el proyecto.
 
-Los comandos colocados en esta sección se ejecutarán durante la compilación de un proyecto o cuando se presione el botón `Ejecutar` en la interfaz gráfica de usuarioed.
+Los comandos colocados en esta sección se ejecutarán durante la compilación de un proyecto o cuando se presione el botón `Ejecutar` en la interfaz gráfica de usuario.
 
 Esta documentación se refiere a la sección `Proceso` ubicada dentro del archivo `script.project`. Para obtener documentación relacionada con la sección `Proceso` de scripts individuales, consulte `Script Process`.
 
