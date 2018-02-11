@@ -24,7 +24,7 @@ Los siguientes valores son utilizados por PEBakery para definir un script y su c
 | Selected | **(Opcional)** Define cómo se puede seleccionar el script para procesarlo. **Por defecto** es `True`. |
 || True - El script se selecciona en el árbol del proyecto y se procesará. |
 || False - El script no está seleccionado en el árbol del proyecto y no se procesará. |
-|| None - El scripts no está permitido para ser seleccionada/deseleccionada y no será procesada. Utilizado principalmente para scripts de configuración y utilidad. |
+|| None - El scripts no está permitido para ser seleccionado/deseleccionado y no será procesada. Utilizado principalmente para scripts de configuración y utilidad. |
 | Interface | **(Opcional)** Especifica la sección que contiene la interfaz gráfica de usuario actualmente mostrada del script. El valor predeterminado es `Interface`. |
 | Mandatory | **(Opcional)** El script se procesará y no se puede deshabilitar. **Por defecto** es `False`.|
 
