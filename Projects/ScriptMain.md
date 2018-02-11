@@ -2,7 +2,7 @@
 
 La sección principal que define todos los detalles de su script. Estos datos afectan la forma en que se muestran los scripts en la interfaz de usuario de PEBakery, así como la forma en que se procesa durante una compilación.
 
-Esta documentación se refiere a la sección `Main` (Principal) ubicada dentro de los archivos `.script`. Para la documentación relacionada con la sección `Main` de `script.project`, consulte `Project Main` `(Proyecto sección [Main] (Principal))`.
+Esta documentación se refiere a la sección `Main` (Principal) ubicada dentro de los archivos `.script`. Para la documentación relacionada con la sección `Main` de `script.project`, consulte `Project Main`.
 
 ## Sintaxis
 
