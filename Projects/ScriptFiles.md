@@ -2,7 +2,7 @@
 
 Los archivos .script son los bloques de construcción de un proyecto y contienen los comandos y la lógica necesarios para construir su PE.
 
-Cada archivo .script puede contener variables, macros, comandos, archivos codificados y, posiblemente, una interfaz gráfica de usuario (GUI) que funcionan en conjunto para realizar diversas tareas; desde construir el núcleo del proyecto hasta agregar aplicaciones adicionales y configurar configuraciones.
+Cada archivo .script puede contener variables, macros, comandos, archivos codificados y, posiblemente, una interfaz gráfica de usuario (GUI) que funcionan en conjunto para realizar diversas tareas; desde construir el núcleo del proyecto hasta agregar aplicaciones adicionales y configuración de ajustes.
 
 ## Ubicación del archivo
 
