@@ -6,7 +6,7 @@ Esta documentación se refiere a la sección `Principal` ubicada dentro del arch
 
 ## Sintaxis
 
-Los datos del proyecto se almacenan en formato estilo .INI `Key = Value` `(Clave = Valor)`.
+Los datos del proyecto se almacenan en formato estilo .INI `Key=Value` `(Clave=Valor)`.
 
 ## Valores
 
