@@ -1,12 +1,12 @@
-# Script sección [Principal]
+# Sección de script [Main] (Principal)
 
 La sección principal que define todos los detalles de su script. Estos datos afectan la forma en que se muestran los scripts en la interfaz de usuario de PEBakery, así como la forma en que se procesa durante una compilación.
 
-Esta documentación se refiere a la sección `Principal` ubicada dentro de los archivos `.script`. Para la documentación relacionada con la sección `Main` de `script.project`, consulte `Project Main`.
+Esta documentación se refiere a la sección `Main` (Principal) ubicada dentro de los archivos `.script`. Para la documentación relacionada con la sección `Main` de `script.project`, consulte `Project Main` `(Proyecto sección [Main] (Principal))`.
 
 ## Sintaxis
 
-Los datos de script se almacenan en formato de estilo .INI `Clave=valor`.
+Los datos de script se almacenan en formato de estilo .INI `Key=Value` `(Clave=valor)`.
 
 ## Valores
 
