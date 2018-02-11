@@ -34,7 +34,7 @@ LBL_Shortcuts=Shortcuts,1,1,4,6,75,20,8,Bold
 
 ### Ejemplo 2
 
-This example demonstrates how you can switch between multiple interface sections within a script.
+Este ejemplo demuestra cómo puede alternar entre múltiples secciones de interfaz dentro de un script.
 
 ```pebakery
 [main]
