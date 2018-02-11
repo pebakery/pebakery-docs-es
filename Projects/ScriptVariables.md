@@ -6,7 +6,7 @@ Esta documentación se refiere a la sección `Variables` ubicada dentro de los a
 
 ## Sintaxis
 
-Las variables de script y las macros se definen con el formato estilo .INI `Key=Value`. Las variables deben estar encerradas en signos de porcentaje `%`.
+Las variables de script y las macros se definen con el formato estilo .INI `Key=Value` `(Clave=Valor)`. Las variables deben estar encerradas en signos de porcentaje `%`.
 
 ### Variables
 
