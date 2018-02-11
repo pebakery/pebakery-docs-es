@@ -1,4 +1,4 @@
-# Sección de Script [Interface]
+# Sección de Script [Interface] (Interfaz)
 
 La sección Interfaz contiene una o más líneas que definen los controles de la interfaz gráfica de usuario principal de un script.
 
