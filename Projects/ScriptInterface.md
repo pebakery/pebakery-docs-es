@@ -6,11 +6,11 @@ Consulte los `Controles GUI` para obtener una lista completa de los controles qu
 
 ## Sintaxis
 
-Las secciones de interfaz usan el formato estilo .INI `Key=Value` y deben contener solo las definiciones compatibles `Control` y `Comments`.
+Las secciones de interfaz usan el formato estilo .INI `Key=Value` `(Clave=Valor)` y deben contener solo las definiciones compatibles `Control` y `Comments`.
 
 ## Observaciones
 
-Un script puede tener múltiples interfaces y es posible alternar entre ellos, cambiando el valor de la tecla `Interface` situada en la sección del script `[Main]'.
+Un script puede tener múltiples interfaces y es posible alternar entre ellas, cambiando el valor de la tecla `Interface` situada en la sección del script `[Main]'.
 
 ## Relacionado
 
