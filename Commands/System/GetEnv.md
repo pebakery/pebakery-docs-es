@@ -28,8 +28,8 @@ La siguiente es una lista de variables de entorno utilizadas comúnmente definid
 | NUMBER_OF_PROCESSORS | La cantidad de núcleos de procesador en su CPU. |
 | OS | Familia del sistema operativo. Ej. `Windows_NT`. |
 | PROCESSOR_ARCHITECTURE | Arquitectura del CPU. Ex. `x86` o `AMD64`. |
-| ProgramData | La ruta a la carpeta que contiene Shared Application Data. Usually `C:\ProgramData`. |
-| ProgramFiles | La ruta a la carpeta que contiene las aplicaciones instaladas. Usually `C:\Program Files`. |
+| ProgramData | La ruta a la carpeta que contiene Shared Application Data. Generalmente `C:\ProgramData`. |
+| ProgramFiles | La ruta a la carpeta que contiene las aplicaciones instaladas. Generalmente `C:\Program Files`. |
 | ProgramFiles(x86) | En los sistemas operativos de 64 bits, esta es la ruta a la carpeta que contiene las aplicaciones de 32 bits instaladas. Generalmente `C:\Program Files (x86)`. |
 | SystemDrive | La letra de la unidad donde está instalado Windows. Generalmente `C:` |
 | SystemRoot | El directorio donde está instalado Windows. Generalmente `C:\Windows`. |
