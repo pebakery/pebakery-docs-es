@@ -19,7 +19,7 @@ WimPathAdd,<WimFile>,<ImageIndex>,<SrcPath>,<DestPath>[,CHECK][,NOACL][,PRESERVE
 
 ### Flags (Indicadores)
 
-The following flags can be used independently and can be specified in any order.
+Los siguientes indicadores se pueden usar de forma independiente y se pueden especificar en cualquier orden.
 
 | Argumento | Descripción |
 | --- | --- |
