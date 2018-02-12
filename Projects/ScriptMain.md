@@ -20,7 +20,7 @@ Los siguientes valores son utilizados por PEBakery para definir un script y su c
 | Credits | **(Opcional)** Reconocimiento de personas o equipos que contribuyeron al desarrollo del guión. |
 | Date | **(Opcional)** Fecha en que se lanzó el script. (El formato recomendado es YYYY-MM-DD.) |
 | Version | **(Opcional)** Número de versión del script. |
-| [Level](./ScriptLevel.md) | Define la secuencia en la que se procesa el script. **Por defecto** es `0`.|
+| [Level](./ScriptLevels.md) | Define la secuencia en la que se procesa el script. **Por defecto** es `0`.|
 | Selected | **(Opcional)** Define cómo se puede seleccionar el script para procesarlo. **Por defecto** es `True`. |
 || True - El script se selecciona en el árbol del proyecto y se procesará. |
 || False - El script no está seleccionado en el árbol del proyecto y no se procesará. |
