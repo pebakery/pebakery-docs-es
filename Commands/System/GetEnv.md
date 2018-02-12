@@ -27,13 +27,13 @@ La siguiente es una lista de variables de entorno utilizadas comúnmente definid
 | COMPUTERNAME | El nombre de la computadora. |
 | NUMBER_OF_PROCESSORS | La cantidad de núcleos de procesador en su CPU. |
 | OS | Familia del sistema operativo. Ej. `Windows_NT`. |
-| PROCESSOR_ARCHITECTURE | Arquitectura del CPU. Ex. `x86` or `AMD64`. |
+| PROCESSOR_ARCHITECTURE | Arquitectura del CPU. Ex. `x86` o `AMD64`. |
 | ProgramData | La ruta a la carpeta que contiene Shared Application Data. Usually `C:\ProgramData`. |
 | ProgramFiles | La ruta a la carpeta que contiene las aplicaciones instaladas. Usually `C:\Program Files`. |
 | ProgramFiles(x86) | En los sistemas operativos de 64 bits, esta es la ruta a la carpeta que contiene las aplicaciones de 32 bits instaladas. Generalmente `C:\Program Files (x86)`. |
 | SystemDrive | La letra de la unidad donde está instalado Windows. Generalmente `C:` |
 | SystemRoot | El directorio donde está instalado Windows. Generalmente `C:\Windows`. |
-| TEMP | The local user's temp directory. Usually `C:\Users\%username%\AppData\Local\Temp`. |
+| TEMP | El directorio temporal del usuario local. Generalmente `C:\Users\%username%\AppData\Local\Temp`. |
 | USERNAME | El nombre del usuario actual. |
 | USERPROFILE | El directorio de inicio del usuario actual. Generalmente `C:\Users\%username%`. |
 | windir | El directorio de Windows. Generalmente `C:\Windows`. |
