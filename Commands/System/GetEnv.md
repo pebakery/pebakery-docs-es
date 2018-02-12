@@ -23,7 +23,7 @@ La siguiente es una lista de variables de entorno utilizadas comúnmente definid
 | --- | --- |
 | APPDATA | La ruta a la carpeta Application Data de los usuarios locales. Generalmente `C:\Users\%username&\AppData\Roaming`. |
 | CommonProgramFiles | La ruta al directorio Common Files. Generalmente `C:\Program Files\Common Files`. |
-| CommonProgramFiles(x86) | En los sistemas operativos de 64 bits, esta es la ruta a la carpeta que contiene 32 bits Common Files. Usually `C:\Program Files (x86)\Common Files`. |
+| CommonProgramFiles(x86) | En los sistemas operativos de 64 bits, esta es la ruta a la carpeta que contiene 32 bits Common Files. Generalmente `C:\Program Files (x86)\Common Files`. |
 | COMPUTERNAME | El nombre de la computadora. |
 | NUMBER_OF_PROCESSORS | La cantidad de núcleos de procesador en su CPU. |
 | OS | Familia del sistema operativo. Ej. `Windows_NT`. |
