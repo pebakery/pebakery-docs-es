@@ -17,7 +17,7 @@ WimOptimize,<WimFile>[,RECOMPRESS[=<STR>]][,CHECK|NOCHECK]
 | Argumento | Descripción |
 | --- | --- |
 | WimFile | La ruta completa del archivo .wim para optimizar. |
-| RECOMPRESS= | **(Opcional)** Recomprimir todos los datos en el WIM. Esto aumentará significativamente el tiempo necesario para optimizar el WIM, pero puede dar como resultado una mejor relación de compresión si la imagen original no se creó usando Wimlib. Para reconstruir el WIM con el formato de compresión existente, use `RECOMPRESS`. Para cambiar el algoritmo de compresión, use `RECOMPRESS =` y especifique uno de los siguientes algoritmos de compresión: |
+| RECOMPRESS= | **(Opcional)** Recomprimir todos los datos en el WIM. Esto aumentará significativamente el tiempo necesario para optimizar el WIM, pero puede dar como resultado una mejor relación de compresión si la imagen original no se creó usando Wimlib. Para reconstruir el WIM con el formato de compresión existente, use `RECOMPRESS`. Para cambiar el algoritmo de compresión, use `RECOMPRESS=` y especifique uno de los siguientes algoritmos de compresión: |
 || NONE - Sin Compresión. |
 || XPRESS - Compresión y descompresión rápidas, pero da como resultado un tamaño de imagen más grande. _(Similar a DISM.exe  /compress:fast )_ |
 || LZX - Estilo Zip Compresión DEFLATE. _(Similar a DISM.exe: /compress:maximum)_ |
