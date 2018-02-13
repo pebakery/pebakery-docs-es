@@ -35,7 +35,7 @@ Nota: con Winbuilder fue necesario cargar una "Biblioteca de macros" al colocar 
 
 ## Relacionado
 
-[Project Main](./ProjectMain.md), [Project Process](./ProjectProcess.md), [Script Interface](./ScriptInterface.md), [Script Main](./ScriptMain.md), [Script Process](./ScriptProcess), [Script Variables](./ScriptVariables.md)
+[Project Main](./ProjectMain.md), [Project Process](./ProjectProcess.md), [Script Interface](./ScriptInterface.md), [Script Main](./ScriptMain.md), [Script Process](./ScriptProcess), [Script Variables](./ScriptVariables.md), [Macros](/LangRef/Macros.md)
 
 ## Ejemplos
 
