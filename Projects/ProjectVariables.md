@@ -31,7 +31,7 @@ myMacro=Run,%PluginFile%,DoSomething
 
 ## Observaciones
 
-Nota: con Winbuilder fue necesario cargar una "Biblioteca de macros" al colocar el comando `AddVariables,%API%,ApiVar,GLOBAL` en la sección de proceso de _script.project_. En PEBakery esto no es obligatorio. Las macros definidas en la sección `%API` `APIVAR` se cargarán automáticamente en el ámbito GLOBAL.
+Nota: con Winbuilder fue necesario cargar una "Biblioteca de macros" al colocar el comando `AddVariables,%API%,ApiVar,GLOBAL` en la sección de proceso de _script.project_. En PEBakery esto no es obligatorio. Las macros definidas en la sección `%APIVAR%` del archivo `%API%` se cargarán automáticamente en el ámbito GLOBAL.
 
 ## Relacionado
 
