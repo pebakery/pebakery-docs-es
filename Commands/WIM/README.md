@@ -9,6 +9,7 @@ Haga clic en un nombre de comando para obtener una descripción detallada.
 | [WimAppend](./WimAppend.md) | Agregar una imagen a un archivo de imágenes de Windows existente. |
 | [WimApply](./WimApply.md) | Extraer ("aplica") una imagen de un archivo de imágen de Windows. |
 | [WimCapture](./WimCapture.md) | Crear un nuevo archivo de imágen de Windows. |
+| [WimDelete](./WimDelete.md) | Elimina una imagen desde un archivo de imagen de Windows (.wim). |
 | [WimExtract](./WimExtract.md) | Extraer uno o más archivos o árboles de directorios de un archivo de imagen de Windows. |
 | [WimExtractBulk](./WimExtractBulk.md) | Utilizar un "archivo de lista" para extraer uno o más archivos o árboles de directorios de un archivo de imágenes de Windows. |
 | [WimInfo](./WimInfo.md) | Recuperar información sobre un archivo de imágenes de Windows. |
