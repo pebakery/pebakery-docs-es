@@ -32,7 +32,7 @@ Las siguientes flags son mutuamente excluyentes.
 | CHECK | **(Opcional)** Antes de optimizar el WIM, verificar su integridad si contiene información de integridad adicional. Incluir también información de integridad adicional en el WIM optimizado, incluso si no estaba presente antes.  |
 | NOCHECK | **(Opcional)** No incluir información de integridad adicional en el WIM optimizado, incluso si estuvo presente antes. |
 
-## Observacione
+## Observaciones
 
 **Integridad de los datos:** Para detectar daños accidentales (no maliciosos) en los datos, se calcula la suma de comprobación de cada archivo extraído y se devuelve un error si no coincide con la suma de comprobación incluida en el archivo WIM. Además, un archivo WIM puede incluir una tabla de integridad (sumas de comprobación adicionales) sobre los datos brutos de todo el archivo WIM. Por razones de rendimiento, PEBakery no verifica ni crea la tabla de integridad de manera predeterminada, pero se puede especificar el indicador `CHECK` para que lo haga.
 
