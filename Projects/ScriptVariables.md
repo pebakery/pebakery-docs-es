@@ -26,7 +26,7 @@ Ninguna.
 
 ## Relacionado
 
-[AddVariables](/Commands/Control/AddVariables.md), [Exec](/Commands/Branch/Exec.md), [Project Main](./ProjectMain.md), [Project Process](./ProjectProcess.md), [Project Variables](./ProjectVariables.md), [Script Interface](./ScriptInterface.md), [Script Main](./ScriptMain.md), [Script Process](./ScriptProcess)
+[AddVariables](/Commands/Control/AddVariables.md), [Exec](/Commands/Branch/Exec.md), [Project Main](./ProjectMain.md), [Project Process](./ProjectProcess.md), [Project Variables](./ProjectVariables.md), [Script Interface](./ScriptInterface.md), [Script Main](./ScriptMain.md), [Script Process](./ScriptProcess), [Macros](/LangRef/Macros.md)
 
 ## Ejemplos
 
