@@ -20,7 +20,7 @@ WimExtract,<SrcWim>,<ImageIndex>,<DestDir>,<ExtractPath>[,Split=<String>][,CHECK
 | ImageIndex | El índice de la imagen dentro del archivo .wim que contiene los archivos que se extraerán. |
 | DestDir | La ruta completa al directorio donde se extraerán los archivos. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
 | ExtractPath | La ruta completa del archivo(s) dentro de la imagen que se extraerá. Los comodines (* ?) Están permitidos. |
-| Split= | Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
+| Split= | **(Opcional)** Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
 
 ### Flags (Indicadores)
 
