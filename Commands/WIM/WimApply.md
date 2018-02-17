@@ -17,7 +17,7 @@ WimApply,<SrcWim>,<ImageIndex>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATT
 | SrcWim | La ruta completa del archivo .wim que se extraerá. |
 | ImageIndex | El índice de la imagen en el archivo .wim que se extraerá. |
 | DestDir | La ruta completa al directorio donde se extraerá el archivo .wim. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
-| Split= | Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
+| Split= | **(Opcional)** Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
 
 ### Flags (Indicadores)
 
