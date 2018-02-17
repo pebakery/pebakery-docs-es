@@ -9,7 +9,7 @@ Por defecto, `WimOptimize` reutilizará datos comprimidos existentes, sin embarg
 ## Sintaxis
 
 ```pebakery
-WimOptimize,<WimFile>[,RECOMPRESS[=<STR>]][,CHECK|NOCHECK]
+WimOptimize,<WimFile>[,ReComp[=<STR>]][,CHECK|NOCHECK]
 ```
 
 ### Argumentos
@@ -17,7 +17,8 @@ WimOptimize,<WimFile>[,RECOMPRESS[=<STR>]][,CHECK|NOCHECK]
 | Argumento | Descripción |
 | --- | --- |
 | WimFile | La ruta completa del archivo .wim para optimizar. |
-| RECOMPRESS= | **(Opcional)** Recomprimir todos los datos en el WIM. Esto aumentará significativamente el tiempo necesario para optimizar el WIM, pero puede dar como resultado una mejor relación de compresión si la imagen original no se creó usando Wimlib. Para reconstruir el WIM con el formato de compresión existente, use `RECOMPRESS`. Para cambiar el algoritmo de compresión, use `RECOMPRESS=` y especifique uno de los siguientes algoritmos de compresión: |
+| ReComp= | **(Optional)** Volver a comprimir todos los datos en el WIM. Esto aumentará significativamente el tiempo necesario para optimizar el WIM, pero puede dar como resultado una mejor relación de compresión si la imagen original no se creó usando Wimlib. Especifique uno de los siguientes algoritmos de compresión: |
+|| KEEP - Conservar el formato de compresión existente. |
 || NONE - Sin Compresión. |
 || XPRESS - Compresión y descompresión rápidas, pero da como resultado un tamaño de imagen más grande. _(Similar a DISM.exe  /compress:fast )_ |
 || LZX - Estilo Zip Compresión DEFLATE. _(Similar a DISM.exe: /compress:maximum)_ |
@@ -42,8 +43,8 @@ Este comando usa la [biblioteca de imágenes de Windows de código abierto (wiml
 
 ## Relacionado
 
-[WimAppend](./WimAppend.md), [WimCapture](./WimCapture.md), [WimPathAdd](./WimPathAdd.md), [WimPathDelete](./WimPathDelete.md), [WimPathRename](./WimPathRename.md)
-
+[WimAppend](./WimAppend.md), [WimCapture](./WimCapture.md), [WimExport](./WimExport.md), [WimPathAdd](./WimPathAdd.md), [WimPathDelete](./WimPathDelete.md), [WimPathRename](./WimPathRename.md)
+ 
 ## Ejemplos
 
 ### Ejemplo 1
@@ -59,15 +60,15 @@ WimOptimize,C:\Temp\Install.wim
 Reconstruir y recomprimir *install.wim*.
 
 ```pebakery
-WimOptimize,C:\Temp\Install.wim,RECOMPRESS
+WimOptimize,C:\Temp\Install.wim,ReComp=KEEP
 ```
 
 ### Ejemplo 3
 
-Reconstruir y recomprimir *install.wim* usando compresión LZX.
+Reconstruir y recomprimir *install.wim* usando compresión LZMS.
 
 ```pebakery
-WimOptimize,C:\Temp\Install.wim,RECOMPRESS=LXZ
+WimOptimize,C:\Temp\Install.wim,ReComp=LZMS
 // Renombrar a install.esd
 FileRename,C:\Temp\install.wim,C:\Temp\install.esd
 ```
