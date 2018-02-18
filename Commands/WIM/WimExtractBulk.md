@@ -9,7 +9,7 @@ Tenga en cuenta que `WimExtractBulk` está destinado a extraer solo un subconjun
 ## Sintaxis
 
 ```pebakery
-WimExtractBulk,<SrcWim>,<ImageIndex>,<DestDir>,<ListFile>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
+WimExtractBulk,<SrcWim>,<ImageIndex>,<ListFile>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
 ```
 
 ### Argumentos
@@ -18,8 +18,8 @@ WimExtractBulk,<SrcWim>,<ImageIndex>,<DestDir>,<ListFile>[,Split=<String>][,CHEC
 | --- | --- |
 | SrcWim | La ruta completa del archivo .wim para extraer archivos de. |
 | ImageIndex | El índice de la imagen dentro del archivo .wim que contiene los archivos que se extraerán. |
-| DestDir | La ruta completa al directorio donde se extraerán los archivos. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
 | ListFile | La ruta completa es un archivo de texto que contiene una lista de rutas para extraer. Consulte la _Especificación de archivo de lista_ más abajo para más detalles. |
+| DestDir | La ruta completa al directorio donde se extraerán los archivos. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
 | Split= | **(Opcional)** Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
 
 ### Flags (Indicadores)
@@ -89,7 +89,7 @@ Este ejemplo extrae varios archivos y directorios de la 4ª imagen de *C:\Temp\i
 
 ```pebakery
 Echo,"Extrayendo de ListFile..."
-WimExtractBulk,%install.wim%,4,C:\Temp\Target\Extract,C:\Temp\Target\FileList.txt,NOACL
+WimExtractBulk,%install.wim%,4,C:\Temp\Target\FileList.txt,C:\Temp\Target\Extract,NOACL
 ```
 
 FileList.txt
