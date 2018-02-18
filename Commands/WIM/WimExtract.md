@@ -9,7 +9,7 @@ Tenga en cuenta que `WimExtract` está destinado a extraer solo un subconjunto d
 ## Sintaxis
 
 ```pebakery
-WimExtract,<SrcWim>,<ImageIndex>,<DestDir>,<ExtractPath>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
+WimExtract,<SrcWim>,<ImageIndex>,<ExtractPath>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
 ```
 
 ### Argumentos
@@ -18,8 +18,8 @@ WimExtract,<SrcWim>,<ImageIndex>,<DestDir>,<ExtractPath>[,Split=<String>][,CHECK
 | --- | --- |
 | SrcWim | La ruta completa del archivo .wim para extraer archivos de. |
 | ImageIndex | El índice de la imagen dentro del archivo .wim que contiene los archivos que se extraerán. |
-| DestDir | La ruta completa al directorio donde se extraerán los archivos. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
 | ExtractPath | La ruta completa del archivo(s) dentro de la imagen que se extraerá. Los comodines (* ?) Están permitidos. |
+| DestDir | La ruta completa al directorio donde se extraerán los archivos. Se sobrescribirán todos los archivos duplicados existentes. Si la estructura del directorio no existe, se creará. |
 | Split= | **(Opcional)** Una cadena que consiste en un archivo de estilo shell "GLOB" que especifica las partes adicionales del WIM dividido. El GLOB debe expandirse para incluir todas las partes del WIM dividido. Los comodines (? *) Son compatibles. |
 
 ### Flags (Indicadores)
@@ -54,7 +54,7 @@ Este ejemplo extrae un solo archivo de la primera imagen de *C:\Temp\boot.wim* a
 
 ```pebakery
 Echo,"Extrayendo Regedit..."
-WimExtract,C:\Temp\boot.wim,1,C:\Temp\Target,Windows\regedit.exe
+WimExtract,C:\Temp\boot.wim,1,Windows\regedit.exe,C:\Temp\Target
 ```
 
 ### Ejemplo 2
@@ -63,5 +63,5 @@ Este ejemplo extraerá todos los archivos .dll del directorio *Windows\System32*
 
 ```pebakery
 Echo,"Extrayendo todos los archivos dll de [boot.wim] [Index: 1] a Windows\System32..."
-WimExtract,C:\Temp\boot.wim,1,C:\Temp\Target,Windows\System32\*.dll,NOACL
+WimExtract,C:\Temp\boot.wim,1,Windows\System32\*.dll,C:\Temp\Target,NOACL
 ```
