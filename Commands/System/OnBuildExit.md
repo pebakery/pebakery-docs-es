@@ -40,6 +40,8 @@ Esta declaración se puede escribir en cualquier lugar dentro de la parte de eje
 
 ### Ejemplo 1
 
+Este script interactivo le permite ver cómo reaccionan los comandos OnScriptExit y OnBuildExit bajo diferentes circunstancias.
+
 ```pebakery
 [Main]
 Title=OnScriptExit/OnBuildExit
@@ -125,5 +127,37 @@ Echo,"Fin de la limpieza."
 
 [CLEANUP-2]
 Echo,"Podemos ejecutar comandos desde otras secciones también..."
+
+```
+
+### Ejemplo 2
+
+Este ejemplo muestra cómo usar una función de limpieza en su archivo `script.project` para realizar acciones cuando sale una construcción.
+
+```pebakery
+[Main]
+Title=MyProject
+Description=MyProject OnBuildExit Ejemplo
+Author=Homes32
+Level=0
+Selected=None
+
+[Variables]
+// Registro Globales
+%RegSystem%=%TargetDir%\Windows\System32\config\System
+%RegSoftware%=%TargetDir%\Windows\System32\config\Software
+%RegDefault%=%TargetDir%\Windows\System32\config\Default
+%RegComponents%=%TargetDir%\Windows\System32\config\Components
+
+[Process]
+Echo,"Starting %ProjectTitle% Build..."
+System,OnBuildExit,Exec,%ProjectDir%\script.project,CleanupProject
+
+[CleanupProject]
+// Asegúrese de que las secciones estén descargadas, incluso si la compilación falla.
+If,ExistRegSubKey,HKLM,Tmp_Software,RegHiveUnload,Tmp_Software
+If,ExistRegSubKey,HKLM,Tmp_System,RegHiveUnload,Tmp_System
+If,ExistRegSubKey,HKLM,Tmp_Default,RegHiveUnload,Tmp_Default
+If,ExistRegSubKey,HKLM,Tmp_Components,RegHiveUnload,Tmp_Components
 
 ```
