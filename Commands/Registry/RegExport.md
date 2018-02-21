@@ -7,13 +7,19 @@ Este comando tiene el mismo efecto que ejecutar `REG.exe EXPORT <RegPath> /Y` de
 ## Sintaxis
 
 ```pebakery
-RegExport,<KeyPath>,<RegFile>
+RegExport,<HKey>,<KeyPath>,<RegFile>
 ```
 
 ### Argumentos
 
 | Argumento | Descripción |
 | --- | --- |
+| HKEY | The root key must be one of the following: |
+|| HKEY_LOCAL_MACHINE or HKLM |
+|| HKEY_CURRENT_CONFIG or HKCC |
+|| HKEY_CLASSES_ROOT or HKCR |
+|| HKEY_CURRENT_USER or HKCU |
+|| HKEY_USERS or HKU |
 | KeyPath | La ruta completa de la clave de registro a exportar. |
 | RegFile | La ruta completa del archivo de destino *.reg. Si existe `RegFile`, se sobrescribirá. |
 
@@ -32,6 +38,6 @@ RegExport,<KeyPath>,<RegFile>
 ```pebakery
 // Asegurese que RegHiveLoad,<KeyPath> coincide con la ruta en su *.reg file
 RegHiveLoad,Tmp_System,%RegSystem%
-RegExport,HKEY_LOCAL_MACHINE\Tmp_System\ControlSet001\Control\Network,c:\myFile.reg
+RegExport,HKEY_LOCAL_MACHINE,Tmp_System\ControlSet001\Control\Network,c:\myFile.reg
 RegHiveUnLoad,Tmp_System
 ```
