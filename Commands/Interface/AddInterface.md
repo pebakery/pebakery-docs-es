@@ -20,9 +20,11 @@ AddInterface,<ScriptFile>,<Interface>,<Prefix>
 
 El comando `AddInterface` es necesario para leer todos los componentes en su script en el caso de que haga uso de múltiples "páginas" de interfaz. También puede usar `AddInterface` para acceder a los valores de los componentes en otro script, siempre que sepa los nombres de los componentes.
 
+Siempre que sus nombres de control sean únicos o use un `Prefix`, puede cargar tantas interfaces a la vez como necesite.
+
 ## Relacionado
 
-[Script Interface](#)
+[Script Interface](/Projects/ScriptInterface.md)
 
 ## Ejemplos
 
