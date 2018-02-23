@@ -40,7 +40,7 @@ Ninguna.
 
 ### Ejemplo 1
 
-Una típica sección `Main` para un proyecto.
+Una típica sección `Main` `(Principal)` de un proyecto.
 
 ```pebakery
 [Main]
@@ -54,7 +54,7 @@ PathSetting=False
 
 ### Ejemplo 2
 
-Una típica sección `Principal` de un "proyecto heredado".
+Una típica sección `Main` `(Principal)` de un "proyecto heredado".
 
 ```pebakery
 [Main]
