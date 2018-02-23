@@ -48,7 +48,9 @@ Ya no se usa, PEBakery siempre dividirá los parámetros.
 
 Ya no se usa.
 
-## Comandos que estarán en desuso
+## Comandos que estarán en desuso:
+
+Estos comandos son completamente funcionales en PEBakery pero se eliminarán en una versión futura.
 
 ### ExtractAndRun
 
