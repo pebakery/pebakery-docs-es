@@ -25,8 +25,8 @@ Estas pruebas se utilizan junto con el comando `If` para determinar si existe o 
 | ExistFile | Verifica si existe un archivo. |
 | ExistDir | Verifica si existe un directorio. |
 | ExistSection | Verifica si existe una [Sección] dentro de un archivo. |
-| ExistRegSubKey<br/>ExistRegSection | Comprueba si existe una clave dentro de una sección del registro. |
-| ExistRegValue<br/>ExistRegKey | Comprueba si existe un valor dentro de una sección del registro. |
+| ExistRegSubKey<br/>ExistRegSection | Comprueba si existe una clave dentro de una sección del registro. `ExistRegSection` se admite para la compatibilidad hacia atrás con los scripts WinBuilder, sin embargo scripts nuevos deben usar el comando` ExistRegSubKey` llamado con más precisión en su lugar. |
+| ExistRegValue<br/>ExistRegKey | Comprueba si existe un valor dentro de una sección del registro. `ExistRegKey` se admite para la compatibilidad hacia atrás con los scripts WinBuilder, sin embargo scripts nuevos deben usar el comando` ExistRegValue` llamado con más precisión en su lugar. |
 | ExistVar | Comprueba si una variable está definida. |
 | ExistMacro | Verifica si se define una macro. |
 | ExistRegMulti | Comprueba la existencia de una subcadena en un valor de cadena múltiple. |
