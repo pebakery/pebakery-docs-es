@@ -1,6 +1,8 @@
 # Comandos obsoletos
 
-## Obsoletos de WinBuilder 082
+## Obsoletos de WinBuilder 082:
+
+Estos comandos no se implementaron en PEBakery.
 
 ### FileByteExtract
 
