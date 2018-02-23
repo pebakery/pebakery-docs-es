@@ -12,7 +12,7 @@ PEBakery utilizará las siguientes propiedades para determinar el orden de proce
 
 ### Niveles
 
-Hay 10 niveles definidos por PEBakery. El proceso comienza en el nivel 1 y continúa hasta el nivel posterior después de todos los scripts bajo el nivel actual se procesan.
+PEBakery reconocerá hasta 256 niveles, sin embargo, por razones prácticas, la mayoría de los proyectos clasifican sus scripts en 10 niveles. El procesamiento comienza en el nivel 1 y continúa al siguiente nivel después de que se procesen todas las secuencias de comandos bajo el nivel actual.
 
 Los scripts con niveles negativos se ocultarán del árbol del proyecto y no se procesarán. Estas secuencias de comandos están destinadas a ser utilizadas como una biblioteca para almacenar configuración, macros, código o archivos adjuntos utilizados por otras secuencias de comandos cuando el usuario final no necesita acceder directamente a dichos elementos.
 
