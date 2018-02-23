@@ -16,7 +16,7 @@
 | [Script](./Script/README.md) | Los comandos de script le permiten modificar un archivo .script, incluida la codificación y extracción de archivos adjuntos. |
 | [Registro](./Registry/README.md) | Comandos que le permiten leer y escribir valores desde el registro local. También puede cargar y modificar las secciones de registro fuera de línea que pertenecen al proyecto. |
 | [Cadena](./String/README.md) | Comandos que le permiten realizar la manipulación de cadenas. |
-| [Sistem]a(./System/README.md) | Comandos para controlar cómo se comporta PEBakery, así como para ejecutar procesos externos. |
+| [Sistema](./System/README.md) | Comandos para controlar cómo se comporta PEBakery, así como para ejecutar procesos externos. |
 | [Texto](./Text/README.md) |  Comandos que le permiten agregar y eliminar líneas de archivos de texto estándar. |
 | [WIM](./WIM/README.md) | Comandos para trabajar con archivos de imágenes de Windows (.wim). |
 
