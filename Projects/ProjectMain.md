@@ -26,6 +26,8 @@ Los siguientes valores son utilizados por PEBakery para definir un proyecto. Los
 | TargetDir | Ruta completa al directorio donde se construirá el proyecto. El valor se copia en la variable `GLOBAL` `%TargetDir% `en el momento de la compilación. |
 | IsoFile | Ruta completa al archivo .iso que se generará. El valor se copia en la variable `GLOBAL` `%IsoFile% `en el momento de la compilación. |
 
+`SourceDir`, `TargetDir`, e `IsoFile` se incluyen para compatibilidad con Winbuilder 082. No son necesarios para proyectos PEBakery, que generalmente almacenan sus rutas en una variable GLOBAL.
+
 ## Observaciones
 
 Ninguna.
@@ -42,8 +44,22 @@ Una típica sección `Main` para un proyecto.
 
 ```pebakery
 [Main]
+Title=MyWinPE
+Description=My PEBakery project
+Author=James Bond
+Version=1
+Date=2018.02.10
+PathSetting=False
+```
+
+### Ejemplo 2
+
+Una típica sección `Principal` de un "proyecto heredado".
+
+```pebakery
+[Main]
 Title=Win7PE SE
-Description=Proyecto Win7PE_SE que admite Win7 DVD x86 y x64
+Description=Win7PE_SE project that supports Win7 DVD x86 and x64
 Author=NightMan, YahooUK, JFX, ChrisR
 Version=15
 Date=2011.02.10
