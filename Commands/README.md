@@ -2,6 +2,8 @@
 
 ## Categorías
 
+Haga clic en una categoría a continuación para obtener una lista de comandos compatibles.
+
 | Categoría | Descripción |
 | --- | --- |
 | [Archivo](./Archive/README.md) | Comandos para extraer y comprimir archivos a y desde varios formatos de archivo. |
