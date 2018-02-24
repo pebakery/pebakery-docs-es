@@ -21,7 +21,7 @@ Una caja que se puede "marcar" o "desmarcar".
 | Width | Ancho del control. |
 | Height | Altura del control. |
 | Value | True/False - Marcado 'Verdadero' Desmarcado 'Falso' |
-| SectionToRun | **(Opcional)** Define la [Sección] dentro de la secuencia de comandos que se procesará cuando se presione el botón o se cambie el valor del control. El nombre de la sección debe estar encerrado en guión bajo `_` caracteres. *Ejemplo:* `_RunMe_` |
+| SectionToRun | **(Opcional)** Define la [Sección] dentro del script que se procesará cuando se presione el botón o se cambie el valor del control. El nombre de la sección debe estar encerrado en guión bajo `_` caracteres. *Ejemplo:* `_RunMe_` |
 | ShowProgress | **(Opcional)** True/False - Muestre la pantalla de progreso de compilación mientras se está ejecutando `SectionToRun`. Este argumento siempre debe seguir el argumento `SectionToRun`. |
 | ToolTip | **(Opcional)** Texto de ayuda que se mostrará cuando el usuario pase el control. Este argumento siempre debe comenzar con un doble guion bajo `__`. *Ejemplo:* `"__Alguna información útil"` |
 
