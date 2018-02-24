@@ -20,7 +20,7 @@ Un botón simple que se puede usar para ejecutar una sección de código dentro 
 | PosY | Posición vertical medida desde la esquina superior izquierda del control. |
 | Width | Ancho del control. |
 | Height | Altura del control. |
-| SectionToRun | Define la [Sección] dentro de la secuencia de comandos que se procesará cuando se presione el botón. La sección especificada debe residir dentro del script actual. |
+| SectionToRun | Define la [Sección] dentro del script que se procesará cuando se presione el botón. La sección especificada debe residir dentro del script actual. |
 | Image | El nombre de la imagen codificada para mostrar en el control. Use `0` para ninguna imagen. |
 | ShowProgress | True/False - Muestre la pantalla * Build progress * mientras se está ejecutando `SectionToRun`. |
 | ToolTip | **(Opcional)** Texto de ayuda que se mostrará cuando el usuario pase el control. Este argumento siempre debe comenzar con un doble guion bajo `__`. *Ejemplo:* `"__Alguna información útil"` |
