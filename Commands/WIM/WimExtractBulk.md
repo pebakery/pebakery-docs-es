@@ -9,7 +9,7 @@ Tenga en cuenta que `WimExtractBulk` está destinado a extraer solo un subconjun
 ## Sintaxis
 
 ```pebakery
-WimExtractBulk,<SrcWim>,<ImageIndex>,<ListFile>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB]
+WimExtractBulk,<SrcWim>,<ImageIndex>,<ListFile>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB][,NOERR]
 ```
 
 ### Argumentos
@@ -31,6 +31,7 @@ Los siguientes indicadores se pueden usar de forma independiente y se pueden esp
 | CHECK | **(Opcional)** Verifique la integridad de `SrcWim` si contiene información de integridad adicional. |
 | NOACL | **(Opcional)** No restaure los descriptores de seguridad en los archivos y directorios extraídos. |
 | NOATTRIB | **(Opcional)** No restaure los atributos del archivo de Windows como de solo lectura, ocultos, etc.. |
+| NOERR | **(Opcional)** No fallar si una ruta o GLOB no existe en `SrcWim`. Se registrará una advertencia para la coincidencia fallida y el procesamiento continuará con la siguiente ruta. |
 
 ### Especificación de archivo de lista
 
@@ -41,10 +42,10 @@ Los archivos de lista deben obedecer las siguientes reglas:
 - Solo se permite una ruta por línea.
 - Todas las rutas son relativas al directorio raíz de la imagen.
 - Las rutas no son sensibles a mayúsculas y minúsculas.
-- Los comodines (*,?) Están permitidos y pueden expandirse para incluir múltiples archivos o directorios.
+- Los comodines (*, ?) Están permitidos y pueden expandirse para incluir múltiples archivos o directorios.
 - Ambos caracteres fowardslash `/` y backslash `\` son compatibles. El `\` principal es opcional.
 - Los comentarios deben estar en su propia línea y comenzar con `;` o `#`.
-- No es necesario citar caminos que contengan espacios. (ejem. _\Program Files\Common Files_)
+- No es necesario citar rutas que contengan espacios. (ejem. _\Program Files\Common Files_)
 - El espacio en blanco se ignora.
 
 Nota: PEBakey convierte internamente el archivo de lista para usar la codificación `UTF-16LE`.
