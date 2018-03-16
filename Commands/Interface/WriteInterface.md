@@ -53,6 +53,8 @@ Intentar escribir un tipo no válido también dará como resultado un error.
 WriteInterface,Value,%ScriptFile%,Interface,pCheckBox1,Joveler
 ```
 
+**Nota:** No es necesario llamar a `System, REFRESHINTERFACE` después de un comando `WriteInterface`.
+
 ## Relacionado
 
 [Script Interface](#), [Set](../Control/Set.md), [Visible](./Visible.md)
