@@ -5,7 +5,7 @@ Descarga archivos de Internet.
 ## Sintaxis
 
 ```pebakery
-WebGet,<URL>,<DestPath>[,<HashType>,<HashDigest>]
+WebGet,<URL>,<DestPath>[,Hash=<HashType>,<HashDigest>],[NOERR]
 ```
 
 ### Argumentos
@@ -14,14 +14,28 @@ WebGet,<URL>,<DestPath>[,<HashType>,<HashDigest>]
 | --- | --- |
 | URL | URL del archivo para descargar.|
 | DestPath | La ruta completa donde se guardará el archivo descargado. Si la ruta no existe, se creará. Si el archivo existe, se sobrescribirá. |
-| HashType   | **(Opcional)** Tipo de hash para calcular. Tipos de hash admitidos: `MD5`, `SHA1`, `SHA256`, `SHA384`, `SHA512`. |
+| Hash=   | **(Opcional)** Tipo de hash para calcular. Tipos de hash admitidos: `MD5`, `SHA1`, `SHA256`, `SHA384`, `SHA512`. |
 | HashDigest | **(Opcional)** El resumen Hash utilizado para verificar el archivo descargado. |
 
-`HashType` y `HashDigest` deben ser usados al mismo tiempo.
+`Hash=` y `HashDigest` deben ser usados al mismo tiempo.
+
+### Flags (Indicadores)
+
+Los indicadores se pueden especificar en cualquier orden
+
+| Flag | Descripción |
+| --- | --- |
+| NOERR | **(Opcional)** No detenga la construcción si falla la descarga. Será responsabilidad del desarrollador del script manejar la situación con gracia. |
+
+### Códigos de retorno
+
+| Variable | Descripción |
+| --- | --- |
+| %StatusCode% | Contiene el código de estado HTTP de la operación WebGet más reciente. Cuando se usa junto con el indicador `NOERR`, el código de estado puede probarse y tomarse medidas correctivas cuando se produce una falla. Se puede encontrar una lista de códigos de estado HTTP en [HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml). |
 
 ## Observaciones
 
-No se realizan comprobaciones para garantizar que la máquina local tenga una conexión a Internet válida o que haya suficiente espacio en disco para descargar el archivo. Si es necesario, estas pruebas pueden realizarse con PEBakery's *Conditional Operators*.
+No se realizan comprobaciones para garantizar que la máquina local tenga una conexión a Internet válida o que haya suficiente espacio en disco para descargar el archivo. Si es necesario, estas pruebas pueden realizarse con PEBakery *Conditional Operators*.
 
 ## Relacionado
 
@@ -36,7 +50,7 @@ No se realizan comprobaciones para garantizar que la máquina local tenga una co
 WebGet,"https://zlib.net/zlib-1.2.11.tar.gz",%BaseDir%\zlib.tar.gz
 
 // El archivo tar.gz descargado se validará con su resumen SHA256.
-WebGet,"https://zlib.net/zlib-1.2.11.tar.gz",%BaseDir%\zlib.tar.gz,SHA256,c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
+WebGet,"https://zlib.net/zlib-1.2.11.tar.gz",%BaseDir%\zlib.tar.gz,Hash=SHA256,c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
 ```
 
 ### Ejemplo 2
