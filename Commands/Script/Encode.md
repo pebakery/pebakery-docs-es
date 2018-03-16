@@ -2,12 +2,12 @@
 
 Incrusta archivos dentro de un script.
 
-PEBakery le permite incrustar archivos en sus scripts para facilitar su distribución. Los archivos codificados se comprimen con zlib2 (si aún no están comprimidos), se codifican en base64 y se almacenan como texto dentro del script.
+PEBakery le permite incrustar archivos en sus scripts para facilitar su distribución. Los archivos codificados se comprimen (si aún no están comprimidos), se codifican en base64 y se almacenan como texto dentro del script.
 
 ## Sintaxis
 
 ```pebakery
-Encode,<ScriptFile>,<DirName>,<FilePath>
+Encode,<ScriptFile>,<DirName>,<FilePath>[,Compression]
 ```
 
 ### Argumentos
@@ -17,10 +17,14 @@ Encode,<ScriptFile>,<DirName>,<FilePath>
 | ScriptFile | La ruta completa al script **Sugerencia:** Use `%scriptFile%` para hacer referencia al script actual. |
 | DirName | La carpeta en la que se colocará el archivo codificado. Si `DirName` no existe, se creará. Si los archivos que se van a codificar ya existen en el `DestDir` del script, se sobrescribirán.|
 | FilePath | La ruta completa del archivo(s) a codificar. Se aceptan comodines. |
+| Compression | Uno de los siguientes algoritmos: |
+|| None - Sin compresión Los archivos están codificados directamente en base64. (Recomendado solo para archivos comprimidos. Ej. 7z, Zip, Rar) |
+|| Deflate - **(Por defecto)** Utiliza la compresión ZLib2. |
+|| LZMA - Utiliza la compresión XZ (LZMA / LZMA2). Relación de compresión superior a costa de un tiempo de codificación más lento. **(No es compatible con Winbuilder)** |
 
 ## Observaciones
 
-**Advertencia:** Asegúrese de que `DirName` no tenga el mismo nombre que otras secciones en su script o se corromperán.
+**Advertencia:** Si `DirName` tiene el mismo nombre que otras seccione dentro de su script esa sección se corromperá.
 
 Los archivos de script no admiten directorios anidados. Si necesita una estructura de directorios compleja, considere comprimir los archivos con 7zip y codificar el archivo resultante.
 
@@ -48,13 +52,22 @@ root/
      |---mySrc.au3
 ```
 
-Codificar el archivo `readme.txt` en el directorio` Ayuda` dentro del script.
+Codificar el archivo `readme.txt` en el directorio` Ayuda` dentro del script. Como no se especificó ninguna compresión, se usará la compresión `Deflate` predeterminada.
 
 ```pebakery
 Encode,%ScriptFile%,Folder,c:\readme.txt
 ```
 
 ### Ejemplo 2
+
+Codifique el archivo `mySettings.reg` en el directorio` Reg` dentro del script usando la compresión `LZMA`.
+
+```pebakery
+Encode,%ScriptFile%,Reg,c:\mySettings.reg,LZMA
+```
+
++### Ejemplo 3
+
 
 Ejemplo de script que muestra el archivo `readme.txt` incrustado en el archivo de script.
 
