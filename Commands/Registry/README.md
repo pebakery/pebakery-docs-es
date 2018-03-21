@@ -6,6 +6,7 @@ Haga clic en un nombre de comando para una descripción detallada.
 
 | Comando | Descripción |
 | --- | --- |
+| [RegCopy](./RegCopy.md) | Copia todas las subclaves y valores de una clave de registro a otra. |
 | [RegDelete](./RegDelete.md) | Elimina una clave o valor del registro. |
 | [RegExport](./RegExport.md) | Exporta los contenidos de una clave de registro a un archivo *.reg. |
 | [RegHiveLoad](./RegHiveLoad.md) | Carga una sección de registro externo en su registro local. |
