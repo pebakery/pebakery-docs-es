@@ -20,6 +20,7 @@ WriteInterface,<Property>,<ScriptFile>,<Interface>,<ControlName>,<Value>
 || Ancho - Ancho del control. |
 || Altura - Altura del control. |
 || Valor - Valor del control. |
+|| ToolTip - El texto que se mostrará cuando el usuario se desplaza sobre el control. se puede eliminar especificando una cadena vacía `" "` o `NIL` como valor de información sobre herramientas. |
 | ScriptFile | La ruta completa al script **Sugerencia:** Use `%ScriptFile%` para hacer referencia al script actual. |
 | Interface | El nombre de la sección que contiene el control de interfaz que desea modificar. |
 | ControlName | El nombre del control para modificar. |
