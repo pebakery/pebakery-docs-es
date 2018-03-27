@@ -22,9 +22,9 @@ Los siguientes valores son utilizados por PEBakery para definir un proyecto. Los
 | Version | **(Opcional)** Número de versión del proyecto. |
 | Interface | **(Opcional)** Especifica la sección que contiene la Interfaz gráfica de usuario que se muestra actualmente. El valor predeterminado es `Interface`. |
 | PathSetting | `True`/`False` - Habilite la modificación de `SourceDir`,` TargetDir`, e `IsoFile` desde el cuadro de diálogo Configuración de PEBakery. |
-| SourceDir | Ruta completa a los archivos fuente de Windows utilizados para construir el proyecto. El valor se copia en la variable `GLOBAL` `%SourceDir%` al momento de la compilación. |
-| TargetDir | Ruta completa al directorio donde se construirá el proyecto. El valor se copia en la variable `GLOBAL` `%TargetDir% `en el momento de la compilación. |
-| IsoFile | Ruta completa al archivo .iso que se generará. El valor se copia en la variable `GLOBAL` `%IsoFile% `en el momento de la compilación. |
+| SourceDir | **(Legacy)** Ruta completa a los archivos fuente de Windows utilizados para construir el proyecto. Si `PathSetting = True` el valor se copia en la variable `GLOBAL` `%SourceDir%` al momento de la compilación. |
+| TargetDir | **(Legacy)** Ruta completa al directorio donde se construirá el proyecto. Si `PathSetting = True` el valor se copia en la variable `GLOBAL` `%TargetDir% `en el momento de la compilación. |
+| IsoFile | **(Legacy)** Ruta completa al archivo .iso que se generará. Si `PathSetting = True` el valor se copia en la variable `GLOBAL` `%IsoFile% `en el momento de la compilación. |
 
 `SourceDir`, `TargetDir`, e `IsoFile` se incluyen para compatibilidad con Winbuilder 082. No son necesarios para proyectos PEBakery, que generalmente almacenan sus rutas en una variable GLOBAL.
 
