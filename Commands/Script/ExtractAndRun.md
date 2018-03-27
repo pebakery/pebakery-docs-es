@@ -19,7 +19,7 @@ ExtractAndRun,<ScriptFile>,<DirName>,<FileName>[,Parameters]
 
 ## Observaciones
 
-`FileName` se extrae al directorio %TEMP% definido por el sistema operativo (generalmente *C:\Users\username\AppData\Local\Temp*) y se borra cuando finaliza la ejecución.
+`FileName` se extrae a un subdirectorio nombrado al azar bajo el directorio %TEMP% definido por el sistema operativo (generalmente *C:\Users\username\AppData\Local\Temp*) y se borra cuando finaliza la ejecución.
 
 `FileName` se ejecuta en primer plano y bloquea la acción posterior del script hasta que el proceso finaliza. Si necesita más control sobre la ejecución del proceso, use los comandos **ExtractFile** y **ShellExecute/ShellExecuteDelete** en su lugar.
 
