@@ -16,10 +16,6 @@ Innecesario. PEBakery tiene soporte nativo para QWORDs y cadenas Unicode en RegR
 
 Ya no se usa Se puede lograr a través de otros métodos.
 
-### ExtractAndRun
-
-Debido a las limitaciones del comando Winbuilder original, esto se puede lograr mejor a través de una macro.
-
 ### StrFormat,CharToOEM / OEMToChar
 
 DOS charset ya no se usa.
