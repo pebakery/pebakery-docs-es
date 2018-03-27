@@ -2,8 +2,6 @@
 
 Extrae un solo archivo desde dentro de un script y lo ejecuta.
 
-**Este comando ha quedado obsoleto y se eliminará en una versión futura. Se recomienda que actualice su código lo antes posible para evitar romper su script. Vea el Ejemplo 3 para una alternativa más flexible.**
-
 ## Sintaxis
 
 ```pebakery
