@@ -20,6 +20,7 @@ ReadInterface,<Property>,<ScriptFile>,<Interface>,<ControlName>,<%DestVar%>
 || Ancho - Ancho del control. |
 || Altura - Altura del control. |
 || Valor - Valor del control. |
+|| ToolTip - El texto que se mostrará cuando el usuario se desplaza sobre el control. |
 | ScriptFile | La ruta completa al script **Sugerencia:** Use `%ScriptFile%` para hacer referencia al script actual. |
 | Interface | El nombre de la sección que contiene la interfaz que desea leer. |
 | ControlName | El nombre del control a leer. |
