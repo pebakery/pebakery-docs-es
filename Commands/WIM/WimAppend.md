@@ -13,7 +13,7 @@ WimAppend,<SrcDir>,<DestWim>,<Compress>[,ImageName=<String>][,ImageDesc=<String>
 | Argumento | Descripción |
 | --- | --- |
 | SrcWim | La ruta completa a los archivos de origen que se capturarán. |
-| DestWim | La ruta completa al archivo .wim que se está creando. Si el archivo existe, se sobrescribirá. Si la estructura del directorio no existe, se creará. |
+| DestWim | La ruta completa al archivo .wim que se está creando. Si el archivo existe, se sobrescribirá. Si la estructura del directorio no existe, la operación fallará. |
 | ImageName= | **(Opcional)** El nombre único para la imagen que se está capturando. Si no se especifica, se usará de forma predeterminada el componente de nombre de archivo de `SrcWim`. |
 | ImageDesc= | **(Opcional)** Información adicional sobre la imagen. |
 | Flags= | **(Opcional)** Especifique una cadena para usar en el elemento `<FLAGS>` de los datos XML para la nueva imagen. |
