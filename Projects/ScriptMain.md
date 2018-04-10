@@ -17,7 +17,6 @@ Los siguientes valores son utilizados por PEBakery para definir un script y su c
 | Title | El título de tu script. |
 | Description | **(Opcional)** Una breve descripción del propósito de los scripts. |
 | Author | **(Opcional)** El autor del script. |
-| Credits | **(Opcional)** Reconocimiento de personas o equipos que contribuyeron al desarrollo del guión. |
 | Date | **(Opcional)** Fecha en que se lanzó el script. (El formato recomendado es YYYY-MM-DD.) |
 | Version | **(Opcional)** Número de versión del script. |
 | [Level](./ScriptLevels.md) | Define la secuencia en la que se procesa el script. **Por defecto** es `0`.|
