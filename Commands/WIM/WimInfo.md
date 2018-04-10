@@ -5,20 +5,28 @@ Recupera información sobre un archivo de imágenes de Windows (.wim).
 ## Sintaxis
 
 ```pebakery
-WimInfo,<SrcWim>,<ImageIndex>,<Property>,<%DestVar%>
+WimInfo,<WimFile>,<ImageIndex>,<Property>,<%DestVar%>[,NOERR]
 ```
 
 ### Argumentos
 
 | Argumento | Descripción |
 | --- | --- |
-| SrcWim | La ruta completa a los archivos de origen que se capturarán. |
+| WimFile | La ruta completa al archivo .wim. |
 | ImageIndex | El índice de la imagen dentro del archivo .wim para recuperar información de. |
 || 0 - Recuperar información básica sobre el archivo WIM. Ver **Propiedades del archivo WIM**. |
 || 1 - Recupere información sobre la primera imagen en el archivo WIM. Ver **Propiedades de la imagen**. |
 || _n_ - Recuperar información sobre la imagen _n_ en el archivo WIM. |
 | Property | La propiedad para consultar a partir de los datos XML de la imagen. Use el caracter `/` para acceder a las propiedades anidadas. Se puede acceder a múltiples propiedades anidadas mediante corchetes. (Ej. _WINDOWS/LANGUAGES/LANGUAGE[2]_ indica el segundo elemento _LANGUAGE_ anidado dentro del elemento _WINDOWS/LANGUAGES_). |
 | DestVar | La variable donde se almacenará el valor de la `Property` especificada. |
+
+### Flags
+
+Los siguientes indicadores se pueden usar de forma independiente y se pueden especificar en cualquier orden.
+
+| Argumento | Descripción |
+| --- | --- |
+| NOERR | **(Opcional)** No falle si una propiedad no existe en los datos XML `SrcWim`. |
 
 ### Propiedades del archivo WIM
 
