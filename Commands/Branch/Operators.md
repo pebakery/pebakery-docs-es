@@ -32,6 +32,10 @@ Estas pruebas se utilizan junto con el comando `If` para determinar si existe o 
 | ExistRegMulti | Comprueba la existencia de una subcadena en un valor de cadena múltiple. |
 | Online | Comprueba si la computadora tiene una conexión de red activa. |
 | Ping | Comprueba si se puede llegar a un host remoto enviando una solicitud de eco ICMP a un host especificado. Devuelve verdadero si se recibe una respuesta de eco ICMP válida. *Nota: La presencia y configuración de proxies, equipos de traducción de direcciones de red (NAT) o firewalls pueden evitar que Ping tenga éxito.* |
+| WimExistIndex | Comprueba si el índice especificado existe dentro de un archivo WIM. Split WIMs (.swm) son compatibles. |
+| WimExistImageInfo | Comprueba si la propiedad XML especificada existe dentro de un archivo WIM. Split WIMs (.swm) son compatibles. |
+| WimExistFile | Verifica si existe un archivo dentro de un archivo WIM. Split WIMs (.swm) son compatibles. |
+| WimExistDir | Verifica si existe un directorio dentro de un archivo WIM. Split WIMs (.swm) son compatibles. |
 
 ## Operadores Lógicos
 
@@ -124,4 +128,17 @@ If,Online,Message,"Network Connection Found"
 // Sintaxis: If,Ping,<Dest>,<Command>
 If,Ping,127.0.0.1,Message,"I can ping 127.0.0.1"
 If,Ping,google.com,Message,"I can ping google.com"
+
+// Sintaxis: If,WimExistIndex,<SrcWim>,<ImageIndex>
+If,WimExistIndex,C:\Temp\boot.wim,1,Message,"The Index exists"
+
+// Sintaxis: If,WimExistImageInfo,<SrcWim>,<ImageIndex>,<Property>
+If,WimExistImageInfo,C:\Temp\boot.wim,1,WINDOWS/LANGUAGES/FALLBACK,Message,"The Property exists"
+
+// Sintaxis: If,WimExistDir,<SrcWim>,<ImageIndex>,<DirPath>
+If,WimExistDir,C:\Temp\boot.wim,1,Windows\System32,Message,"The Directory exists within the WIM image."
+
+// Sintaxis: If,WimExistFile,<SrcWim>,<ImageIndex>,<FilePath>
+If,WimExistFile,C:\Temp\boot.wim,1,Windows\regedit.exe,Message,"The File exists within the WIM image."
+
 ```
