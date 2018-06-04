@@ -5,7 +5,7 @@ Un marco rectangular utilizado para organizar controles.
 ## Sintaxis
 
 ```pebakery
-<Name>=<Caption>,<Visibility>,12,<PosX>,<PosY>,<Width>,<Height>[,<FontSize>][,<FontWeight>][,<ToolTip>]
+<Name>=<Caption>,<Visibility>,12,<PosX>,<PosY>,<Width>,<Height>[,<FontSize>][,<FontWeight>][,<FontStyle>][,<ToolTip>]
 ```
 
 ### Argumentos
@@ -22,13 +22,12 @@ Un marco rectangular utilizado para organizar controles.
 | Height | Altura del control. |
 | Font Size | **(Opcional)** Tamaño de fuente en puntos. (ej. 12) |
 | Font Weight | **(Opcional)** Puede ser `Normal`, `Bold`. |
+| Font Style | **(Opcional)** Puede ser `Italic`, `Underline`, `Strike`. |
 | ToolTip | **(Opcional)** Texto de ayuda que se mostrará cuando el usuario pase el control. Este argumento siempre debe comenzar con un doble guion bajo `__`. *Ejemplo:* `"__Alguna información útil"` |
 
 ## Observaciones
 
-Para compatibilidad con versiones anteriores con interfaces diseñadas usando el editor interno de Winbuilder, si el control `Name` es igual al argumento` Caption` no se mostrará ningún título.
-
-Para que aparezca `Caption`, la opción de compatibilidad *Disable Bevel Caption* debe estar desactivada en la configuración de PEBakery.
+Para que se muestre el `Caption`, se debe especificar un` Tamaño de fuente`.
 
 ## Relacionado
 
@@ -37,12 +36,12 @@ Para que aparezca `Caption`, la opción de compatibilidad *Disable Bevel Caption
 ## Ejemplos
 
 ```pebakery
-// Bisel sin leyenda
+// Bisel sin leyenda (no se especifica el tamaño de la fuente)
 Bevel1=Bevel1,1,12,128,8,414,287
 Bevel2="",1,12,250,109,184,62,10,Bold
 
 // Bisel con leyenda
-Bevel3="Hello World!",1,12,250,19,104,82
+Bevel3="Hello World!",1,12,250,19,104,82,10
 
 // Bevel with 10pt font and Bold caption
 Bevel4="Settings",1,12,135,239,400,50,10,Bold
