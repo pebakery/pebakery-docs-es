@@ -9,7 +9,7 @@ Tenga en cuenta que `WimExtractBulk` está destinado a extraer solo un subconjun
 ## Sintaxis
 
 ```pebakery
-WimExtractBulk,<SrcWim>,<ImageIndex>,<ListFile>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB][,NOERR]
+WimExtractBulk,<SrcWim>,<ImageIndex>,<ListFile>,<DestDir>[,Split=<String>][,CHECK][,NOACL][,NOATTRIB][,NOERR][,NOWARN]
 ```
 
 ### Argumentos
@@ -32,6 +32,7 @@ Los siguientes indicadores se pueden usar de forma independiente y se pueden esp
 | NOACL | **(Opcional)** No restaure los descriptores de seguridad en los archivos y directorios extraídos. |
 | NOATTRIB | **(Opcional)** No restaure los atributos del archivo de Windows como de solo lectura, ocultos, etc.. |
 | NOERR | **(Opcional)** No fallar si una ruta o GLOB no existe en `SrcWim`. Se registrará una advertencia para la coincidencia fallida y el procesamiento continuará con la siguiente ruta. |
+| NOWARN | **(Opcional)** No grabar una advertencia si una ruta o GLOB no existe en `SrcWim`. Aún se generará un mensaje en el registro, sin embargo, tendrá un estado `Muted`. |
 
 ### Especificación de archivo de lista
 
