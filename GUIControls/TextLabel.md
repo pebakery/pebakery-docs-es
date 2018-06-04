@@ -5,7 +5,7 @@ Muestra una línea de texto.
 ## Syntax
 
 ```pebakery
-<Name>=<Caption>,<Visibility>,1,<PosX>,<PosY>,<Width>,<Height>,<FontSize>,<FontWeight>[,<ToolTip>]
+<Name>=<Caption>,<Visibility>,1,<PosX>,<PosY>,<Width>,<Height>,<FontSize>,<FontWeight>[,<FontStyle>][,<ToolTip>]
 ```
 
 ### Argumentos
@@ -21,7 +21,8 @@ Muestra una línea de texto.
 | Width | Ancho del control. |
 | Height | Altura del control. |
 | Font Size | Tamaño de fuente en puntos. (ej. 12) |
-| Font Weight | Puede ser `Normal`, `Bold`, `Italic`, `Underline`, o `Strike`. |
+| Font Weight | Puede ser `Normal`, `Bold`. |
+| Font Style | **(Opcional)** Puede ser `Italic`, `Underline`, `Strike`. |
 | ToolTip | **(Opcional)** Texto de ayuda que se mostrará cuando el usuario pase el control. Este argumento siempre debe comenzar con un doble guion bajo `__`. *Ejemplo:* `"__Alguna información útil"` |
 
 ## Observaciones
