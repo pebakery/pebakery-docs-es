@@ -2,17 +2,23 @@
 
 Para informar errores, abra un nuevo problema en [issue tracker](https://github.com/ied206/PEBakery/issues).
 
-Al informar, proporcione estas informaciones y archivos.
+Al informar, proporcione información y archivos que puedan reproducir el problema.
 
-## Log exportado
+## Nivel de depuración de registro
 
-Abra `LogWindow` de PEBakery y seleccione la pestaña` Build Log`.
+Máximo `Log Debug Level` ayuda al desarrollador a rastrear qué parte de PEBakery tiene errores.
 
-Seleccione una compilación y exporte al archivo.
+En el 'Ajuste' de PEBakery, abra la pestaña 'Registro'. Establezca `Log Debug Level` en` PrintExceptionStackTrace`. Luego, vuelve a plantear el problema.
 
-## Muestra reproducible
+## Exportar registro
 
-Por favor cargue el `archivo .script`(`.script file`) que causó un error, o un complemento que puede reproducir un error.
+Abra el `Log Viewer` de PEBakery, vaya a la pestaña `Build Log` y seleccione una compilación donde se encuentre el error.
+
+Haga clic en el botón `Exportar` para guardar el registro en el archivo. Para la depuración, se prefiere el formato `.txt`.
+
+## Muestra de script reproducible
+
+Cargue el archivo `.script` que puede reproducir un error.
 
 ## Captura de pantalla
 
