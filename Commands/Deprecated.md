@@ -1,6 +1,6 @@
 # Comandos obsoletos
 
-## Obsoletos de WinBuilder 082:
+## Obsoletos de WinBuilder 082
 
 Estos comandos no se implementaron en PEBakery.
 
@@ -44,13 +44,9 @@ Ya no se usa, PEBakery siempre dividirá los parámetros.
 
 Ya no se usa.
 
-## Comandos que estarán en desuso:
+## Comandos que estarán en desuso
 
-Estos comandos son completamente funcionales en PEBakery pero se eliminarán en una versión futura.
-
-### ExtractAndRun
-
-Debido a las limitaciones del comando original de Winbuilder, esto se implementa mejor como una macro utilizando Extract estándar y ShellExecuteDelete
+Estos comandos son completamente funcionales dentro de PEBakery pero se eliminarán en una versión futura. Se aconseja evitar estos comandos en sus proyectos.
 
 ### WebGetIfNotExist
 
@@ -70,7 +66,7 @@ El Control de cuentas de usuario (UAC) está habilitado de forma predeterminada 
 
 ### System,RebuildVars
 
-Mientras que el manual WB082 afirma que este comando actualizará las variables para usar un valor más nuevo, simplemente borrará las variables en WB082 en realidad.
+A diferencia de su nombre, este comando simplemente borra las variables en WB082.
 
 Actualmente, PEBakery restablece las variables a las variables de script predeterminadas.
 
