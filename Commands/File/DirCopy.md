@@ -21,7 +21,7 @@ DirCopy,<SrcDir>,<DestDir>
 
 Si `DestDir` es un archivo, DirCopy falla.
 
-WinBuilder 082 tiene un error que indica que DirCopy funciona de manera similar a FileCopy cuando se usan comodines. Activar la opción de compatibilidad `Simular WinBuilder's DirCopy Asterisk Bug` simula este error. Ver el Ejemplo 2 para más detalles.
+WinBuilder 082 tiene un error que indica que DirCopy funciona de manera similar a FileCopy cuando se usan comodines. Activar la opción de compatibilidad `Simular WinBuilder's *.* error en DirCopy` simula este error. Ver el Ejemplo 2 para más detalles.
 
 ## Relacionado
 
@@ -90,7 +90,7 @@ C:\Temp\Dest\
 |--- AEE\
 ```
 
-**Resultado al usar la opción de compatibilidad para simular el error de WinBuilder DirCopy Asterisk**
+**Resultado al usar la opción de compatibilidad para Simular WinBuilder *.* error en DirCopy**
 
 ```pebakery
 C:\Temp\Dest\
