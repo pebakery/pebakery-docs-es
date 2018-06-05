@@ -5,7 +5,7 @@ Realiza una operación NO bit a bit.
 ## Sintaxis
 
 ```pebakery
-Math,BitNot,<%DestVar%>,<Vaue>
+Math,BitNot,<%DestVar%>,<Value>[,Size]
 ```
 
 ### Argumentos
@@ -14,10 +14,11 @@ Math,BitNot,<%DestVar%>,<Vaue>
 | --- | --- |
 | DestVar | La variable donde se almacenará el resultado. |
 | Value | El valor para operar en. |
+| Size | **(Opcional)** Tamaño del `Value` en bits: `8` `16` `32` `64` |
 
 ## Observaciones
 
-Ninguna.
+Default bit size is 32bit.
 
 ## Relacionado
 
