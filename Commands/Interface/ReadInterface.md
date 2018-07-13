@@ -20,13 +20,25 @@ ReadInterface,<Property>,<ScriptFile>,<Interface>,<ControlName>,<%DestVar%>
 || Ancho - Ancho del control. |
 || Altura - Altura del control. |
 || Valor - Valor del control. |
+|| Items - Lista de los artículos que contiene el control. |
 || ToolTip - El texto que se mostrará cuando el usuario se desplaza sobre el control. |
 | ScriptFile | La ruta completa al script **Sugerencia:** Use `%ScriptFile%` para hacer referencia al script actual. |
 | Interface | El nombre de la sección que contiene la interfaz que desea leer. |
 | ControlName | El nombre del control a leer. |
 | DestVar | La variable que contendrá el valor de la propiedad seleccionada. |
+| Delim= | **(Opcional)** Delimitador utilizado para separar la lista de 'Elementos' recuperados de un control ComboBox o RadioGroup. **Default:** `\|` |
 
 ## Observaciones
+
+La propiedad `Items` solo se admite en estos controles:
+
+| Control | Valor |
+| --- | --- |
+| ComboBox    | (Cadena) Elemento seleccionado. |
+| RadioGroup  | (Entero) Índice basado en cero del elemento seleccionado. |
+
+PeBakery devolverá la lista de elementos en formato `|` delimitado por tuberías a menos que el argumento `Delim =` especifique lo contrario.
+Intentar leer `Items` desde un control no compatible generará un error.
 
 La propiedad `Valor` solo se admite en estos controles:
 
@@ -40,16 +52,11 @@ La propiedad `Valor` solo se admite en estos controles:
 | FileBox     | (Cadena) Contenido del control. |
 | RadioGroup  | (Entero) Índice basado en cero del elemento seleccionado. |
 
-Intentar leer `Valor` desde un control no compatible dará como resultado un error.
-
-```pebakery
-// ¡Error! No puedes leer el valor de una etiqueta de texto.
-ReadInterface,Value,%ScriptFile%,Interface,pTextLabel1,%Dest%
-```
+Si intenta leer `Valor` desde un control no compatible, se producirá un error.
 
 ## Relacionado
 
-[Script Interface](#), [WriteInterface](./WriteInterface.md)
+[Script Interface Controls](/GUIControls/README.md), [WriteInterface](./WriteInterface.md)
 
 ## Ejemplos
 
@@ -200,6 +207,7 @@ LBL_HeightValue=21,1,1,301,360,50,18,8,Normal
 ### Ejemplo 2
 
 Supongamos que un archivo %ScriptFile% consta de estas secciones:
+
 ```pebakery
 [Main]
 Title=ReadInterface
@@ -227,9 +235,20 @@ pTextLabel2=Hidden,0,1,20,50,280,18,8,Normal
 ```
 
 #### Leer texto
+
 ```pebakery
 // Devolver "Visualización"
 ReadInterface,Text,%ScriptFile%,Interface,pTextBox1,%Dest%
+```
+
+#### Leer artículos
+
+```pebakery
+// Devolver "A|B|C|D"
+ReadInterface,Items,%ScriptFile%,Interface,pComboBox1,%Dest%
+
+// Devolver "A$B$C$D"
+ReadInterface,Items,%ScriptFile%,Interface,pComboBox1,%Dest%,Delim=$
 ```
 
 #### Leer visibilidad
