@@ -8,7 +8,7 @@ Haga clic en un nombre de comando para obtener una descripción detallada.
 | [System,EndLocal](./EndLocal.md) | Finaliza la localización de variables dentro de un script. |
 | [System,ErrorOff](./ErrorOff.md) | Impide que un proceso falle en caso de que ocurra un error. |
 | [System,GetEnv](./GetEnv.md) | Establece el valor de la variable de entorno del sistema operativo host. |
-| [System,GetFeeDrive](./GetFeeDrive.md) | Devuelve la letra de unidad libre más alta disponible, generalmente la unidad "Z:". |
+| [System,GetFeeDrive](./GetFreeDrive.md) | Devuelve la letra de unidad libre más alta disponible, generalmente la unidad "Z:". |
 | [System,GetFreeSpace](./GetFreeSpace.md) | Devuelve el espacio libre en disco de una ruta, en Megabytes. |
 | [System,IsAdmin](./IsAdmin.md) | Comprueba si PEBakery fue iniciado por una cuenta con privilegios de "Administrador". |
 | [System,Load](./Load.md) | Escanea la ruta especificada para proyectos y scripts nuevos/modificados y los agrega al árbol del proyecto. |
