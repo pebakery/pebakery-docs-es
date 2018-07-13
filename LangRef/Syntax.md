@@ -22,11 +22,11 @@ Los comandos de PEBakery consisten en una palabra clave seguida de uno o más pa
 
 Los comentarios se pueden usar para proporcionar una explicación o anotación en el script para facilitar que otros desarrolladores entiendan lo que está haciendo el script. También se pueden usar para "comentar" líneas de código mientras se depura un script.
 
-PEBakery admite los comentarios `//` de estilo de C ++, así como los comentarios de estilo _.ini_ utilizando los delimitadores hash `##` o punto y coma`;`. Cada comentario debe colocarse en su propia línea y comenzar con un delimitador de comentario admitido. Un comentario finaliza cuando se inicia una nueva línea. PEBakery no admite comentarios de "bloque" multilínea.
+PEBakery admite los comentarios `//` de estilo de C ++, así como los comentarios de estilo _.ini_ utilizando los delimitadores hash `#` o punto y coma`;`. Cada comentario debe colocarse en su propia línea y comenzar con un delimitador de comentario admitido. Un comentario finaliza cuando se inicia una nueva línea. PEBakery no admite comentarios de "bloque" multilínea.
 
 ```texto
 // Este es un comentario
-## Esto también es un comentario
+# Esto también es un comentario
 ; ¡Este es otro comentario!
 ```
 
