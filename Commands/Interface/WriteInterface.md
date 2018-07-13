@@ -20,17 +20,30 @@ WriteInterface,<Property>,<ScriptFile>,<Interface>,<ControlName>,<Value>
 || Ancho - Ancho del control. |
 || Altura - Altura del control. |
 || Valor - Valor del control. |
+|| Items - Lista de los artículos que contiene el control. |
 || ToolTip - El texto que se mostrará cuando el usuario se desplaza sobre el control. se puede eliminar especificando una cadena vacía `" "` o `NIL` como valor de información sobre herramientas. |
 | ScriptFile | La ruta completa al script **Sugerencia:** Use `%ScriptFile%` para hacer referencia al script actual. |
 | Interface | El nombre de la sección que contiene el control de interfaz que desea modificar. |
 | ControlName | El nombre del control para modificar. |
 | Value | El nuevo valor a escribir. |
+| Delim= | **(Opcional)** Delimitador utilizado para separar la lista de `Items` que se escribirá en un control ComboBox o RadioGroup. **Default:** `\|` |
 
 ## Observaciones
 
+La propiedad `Items` solo se admite en estos controles:
+
+| Control | Valor |
+| --- | --- |
+| ComboBox    | (Cadena) Elemento seleccionado. |
+| RadioGroup  | (Entero) Índice basado en cero del elemento seleccionado. |
+
+PEBakery asume que la lista `Items` pasada al comando` WriteInterface` es `|` delimitado por tuberías a menos que el argumento `Delim =` especifique lo contrario.
+
+Intentar leer `Items` desde un control no compatible generará un error.
+
 La propiedad `Valor` solo se admite en estos controles:
 
-| Control | Leer valor |
+| Control | Valor |
 | --- | --- |
 | TextBox     | (Cadena) Contenido del control. |
 | NumberBox   | (Cadena) Contenido del control. |
@@ -40,7 +53,7 @@ La propiedad `Valor` solo se admite en estos controles:
 | FileBox     | (Cadena) Contenido del control. |
 | RadioGroup  | (Entero) Índice basado en cero del elemento seleccionado. |
 
-Tratar de escribir un `Valor` para un control no compatible dará como resultado un error.
+Si intenta escribir `Valor` desde un control no compatible, se producirá un error.
 
 ```pebakery
 // ¡Error! No puede escribir un valor en una etiqueta de texto.
@@ -58,7 +71,7 @@ WriteInterface,Value,%ScriptFile%,Interface,pCheckBox1,Joveler
 
 ## Relacionado
 
-[Script Interface](#), [Set](../Control/Set.md), [Visible](./Visible.md)
+[ReadInterface](./ReadInterface.md), [Script Interface Controls](/GUIControls/README.md), [Set](../Control/Set.md), [Visible](./Visible.md)
 
 ## Ejemplos
 
@@ -245,6 +258,28 @@ pTextLabel2=Hidden,0,1,20,50,280,18,8,Normal
 WriteInterface,Text,%ScriptFile%,Interface,pTextBox1,PEBakery
 ```
 
+#### Write Items
+
+Replace `A,B,C,D` items with `D,C,B,A`
+
+```pebakery
+// Origen : pComboBox1=A,1,4,20,130,150,21,A,B,C,D
+// Resultado : pComboBox1=B,1,4,20,130,150,21,D,C,B,A
+WriteInterface,Items,%ScriptFile%,Interface,pComboBox1,D|C|B|A
+```
+
+Append  `D,C,B,A` to the existing list of items
+
+```pebakery
+// Origen : pComboBox1=A,1,4,20,130,150,21,A,B,C,D
+// Resultado : pComboBox1=B,1,4,20,130,150,21,A,B,C,D,D,C,B,A
+
+// Obtenga los artículos actuales en ComboBox 1
+ReadInterface,Items,%ScriptFile%,Interface,pComboBox1,%ExistingItems%
+// Agregar a nuestra nueva lista y escribir
+WriteInterface,Items,%ScriptFile%,Interface,pComboBox1,%ExistingItems%|D|C|B|A
+```
+
 #### Escribir visibilidad
 
 ```pebakery
@@ -283,5 +318,4 @@ WriteInterface,Value,%ScriptFile%,Interface,pFileBox1,D:\PEBakery\Launcher.exe
 // Origen : pRadioGroup1=pRadioGroup1,1,14,20,160,150,60,Option1,Option2,Option3,2
 // Resultado : pRadioGroup1=pRadioGroup1,1,14,20,160,150,60,Option1,Option2,Option3,0
 WriteInterface,Value,%ScriptFile%,Interface,pRadioGroup1,0
->>>>>>> develop
 ```
