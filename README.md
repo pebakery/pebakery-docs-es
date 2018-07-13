@@ -6,7 +6,8 @@
 
 1. Referencia de scripting
     * [Sintaxis de .Script](./LangRef/Syntax.md)
- 	 * [Variables](./LangRef/Variables.md)
+ 	 * [Comentarios](./LangRef/Comments.md)
+	 * [Variables](./LangRef/Variables.md)
 	 * [Macros](./LangRef/Macros.md)
     * [Componentes del Proyecto](./Projects/README.md)
          * [Scripts](./Projects/ScriptFiles.md)
