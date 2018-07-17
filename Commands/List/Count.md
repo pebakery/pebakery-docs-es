@@ -30,7 +30,7 @@ Use `List,Count` para recuperar el último elemento en una lista.
 
 ```pebakery
 [Main]
-Title=List-Count Examplo 1
+Title=List-Count Ejemplo 1
 Description=Demostrar el uso de List,Count.
 Level=5
 Version=1
@@ -51,7 +51,7 @@ Pasa a través de una lista completa.
 
 ```pebakery
 [Main]
-Title=List-Count Examplo 2
+Title=List-Count Ejemplo 2
 Description=Demostrar el uso de List,Count.
 Level=5
 Version=1
