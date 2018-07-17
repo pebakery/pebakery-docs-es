@@ -32,7 +32,7 @@ Append _PEBakery_ to the end of a list.
 
 ```pebakery
 [Main]
-Title=List-Append Examplo
+Title=List-Append Ejemplo
 Description=Demostrar el uso de List,Append.
 Level=5
 Version=1
